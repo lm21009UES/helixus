@@ -11,6 +11,8 @@
   -Hugo Alexander Ulloa Serpas (US21003) <br>
   -Ángel Gabriel Vásquez Crespo (VC21007) <br>
 
-# Versión (actual): v0.0.1 <br>
+# Versión (actual): 
+v0.0.1
 
-# Aplicaciones: Web sobre marketing
+# Aplicaciones: 
+Web sobre marketing
