@@ -8,6 +8,7 @@
   -Erick Adony López Meléndez (LM21009)
   -Hugo Alexander Ulloa Serpas (US21003)
   -Ángel Gabriel Vásquez Crespo (VC21007)
+  
 **Versión (actual):** v0.0.1
 
 **Aplicaciones:** Web sobre marketing
