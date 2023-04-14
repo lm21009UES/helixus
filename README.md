@@ -15,4 +15,4 @@
 v0.0.1
 
 # Aplicaciones: 
-Web sobre marketing
+Web con documentación sobre la biblioteca en cuestión
