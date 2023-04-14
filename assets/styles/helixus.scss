@@ -1,0 +1,91 @@
+//Colours
+//Using the nord colorscheme. Source: https://www.nordtheme.com/
+$red-colour: #BF616A;
+$yellow-colour: #EBCB8B;
+$green-colour: #A3BE8C;
+$blue-color: #5E81AC;
+$light-blue-colour: #88C0D0;
+$white-colour: #ECEFF4;
+$black-colour: #2E3440;
+
+body{
+    p{
+        background-color: red;
+    }
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col{
+    flex-shrink: 0;
+    flex-basis: 0;
+}
+
+.col-1{
+    flex-shrink: 0;
+    flex-basis: auto;
+    width: 8.3333333%;
+}
+
+.col-2{
+    flex-shrink: 0;
+    flex-basis: auto;
+    width: 16.6666667%;
+}
+
+.col-3{
+    flex-shrink: 0;
+    flex-basis: auto;
+    width: 25%;
+}
+
+.col-4{
+    flex-shrink: 0;
+    flex-basis: auto;
+    width: 33.3333333%;
+}
+
+.col-5{
+    flex-shrink: 0;
+    flex-basis: auto;
+    width: 41.6666667%;
+}
+
+.col-6{
+    flex-shrink: 0;
+    flex-basis: auto;
+    width: 50%;
+}
+
+.main{
+    .documentation{
+        .buttons{
+            .colorized-buttons{
+                .red-colour-button{
+                    background-color: $red-colour;
+                }
+                .yellow-colour-button{
+                    background-color: $yellow-colour;
+                }
+                .green-colour-button{
+                    background-color: $green-colour;
+                }
+                .blue-colour-button{
+                    background-color: $blue-color;
+                }
+                .lightblue-colour-button{
+                    background-color: $light-blue-colour;
+                }
+                .white-colour-button{
+                    background-color: $white-colour;
+                }
+                .black-colour-button{
+                    background-color: $black-colour;
+                }
+            }
+        }
+    }
+}

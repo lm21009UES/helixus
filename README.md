@@ -1,7 +1,7 @@
 # helixus
 
 # Descripción: 
- El proyecto en cuestión consiste en una biblioteca tipo bootstrap para interactuar con sitios web. En este caso, se trata de un diseño enfocado a una pequeña empresa sobre marketing.
+ El proyecto en cuestión consiste en una biblioteca tipo bootstrap para interactuar con sitios web. En este caso, vamos a documentar nuestra la biblioteca que hemos creado.
 
 # Nombre de la librería: 
 *helixus*

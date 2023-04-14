@@ -4,55 +4,90 @@
     <meta charset="UTF-8">
     <title>Helixus | Home</title>
 <!--    <link rel="stylesheet" href="./helixus.css">-->
-    <link rel="stylesheet" href="helixus.css">
+    <link rel="stylesheet" href="assets/styles/helixus.css">
 </head>
 <body>
     <header class="header">
         <div class="image">
             <img src="assets/images/temporary-logo.jpg" alt="" width="50px">
+            <h1>Helixus | Bienvenido</h1>
         </div>
         <nav class="nav row">
-            <div class="company-name col">
-                <h1>Helixus</h1>
+            <div class="home">
+                <a href="#top">Top</a>
             </div>
-            <div class="nav-items col">
-                <h2>Home</h2>
+            <div class="source-doce">
+                <a href="https://github.com/lm21009UES/helixus" target="_blank">Code</a>
             </div>
-            <div class="nav-items col">
-                <h2>Sobre nosotros</h2>
-            </div>
-            <div class="nav-items col">
-                <h2>Contacto</h2>
-            </div>
-            <div class="nav-items col">
-                <h2>Otros</h2>
+            <div class="about">
+                <a href="#about-us">Acerca de</a>
             </div>
         </nav>
     </header>
     <main class="main">
-        <section>
+        <section id="top">
             <article class="welcome">
-                <h1>Helixus Corporation</h1>
+                <h1>Documentación</h1>
             </article>
             <article class="introductive-welcome">
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Beatae consectetur delectus deleniti deserunt earum incidunt obcaecati quaerat quia!
-                    Amet architecto consequuntur corporis cumque dolorem, earum eligendi laborum perferendis sequi tempora.
+                    Helixus es el nombre que recibe la biblioteca de manipulación de contenido. Con helixus, puedes fácilmente agregar múltiples estilos a tu página.
+                    Dispone de una variedad de formatos de texto, sombras, separación de contenido, bordes, animaciones,
+                    entre otros. Puedes aplicar cada uno de estos estilos a formularios, tarjetas, alertas, barras de navegación, badges y botones.
+                    A continuación, se detalla de la manera más clara y precisa posible cómo utilizar esta biblioteca, escrita en CSS.
                 </p>
             </article>
-            <article class="promo-image">
-                <img src="assets/images/temp-promo-img.jpg" alt="" width="200px">
+        </section>
+        <section class="documentation">
+            <article class="text-format">
+                <h2>Formato de texto</h2>
+                <p>
+                    Es importante crear una buena impresión en toda presentación, y el texto es una parte muy importante.
+                    Los formatos de texto disponible, son:
+                    <p>
+                        <h3>Bold</h3>
+                        <p></p>
+                    </p>
+                </p>
             </article>
-            <article class="forms">
-                <form>
-                    <button>Descubre un mundo de oportunidades</button>
-                </form>
+            <article class="buttons">
+                <h2>Botones</h2>
+                <p>Los botones son una manera interactiva de manipular el contenido. El botón por default en HTML se ve de la siguiente manera: </p>
+                <button>Hola, soy un botón sin estilo.</button>
+                <p>Pero con helixus, puedes agregar algunos estilos como los siguientes: </p>
+                <article class="colorized-buttons">
+                    <p>
+                        Agregar color a un botón es sencillo. Para ello, simplemente agregamos el nombre de la clase del botón con el color que nos interesa. Por ejemplo:
+                    </p>
+                    <button class="green-colour-button">Hola, soy un botón verde.</button>
+                    <p>
+                        Las clases de colores disponibles son las siguientes:
+                        <ul>
+                            <li>red-colour-button</li>
+                            <li>yellow-colour-button</li>
+                            <li>green-colour-button</li>
+                            <li>blue-colour-button</li>
+                            <li>lightblue-colour-button</li>
+                            <li>white-colour-button</li>
+                            <li>black-colour-button</li>
+                        </ul>
+                    </p>
+                </article>
+                <article class="rounded">
+                    <h3>Botón redondeado</h3>
+                    <button class="rounded-button"></button>
+                </article>
             </article>
         </section>
     </main>
     <footer class="footer">
-        <p>Copyright - Helixus corporation - 2023</p>
+        <p id="about-us">
+            Desarrollado por: <br>
+            -López Meléndez, Erick Adony  (LM21009) <br>
+            -Ulloa Serpas, Hugo Alexander  (US21003) <br>
+            -Vásquez Crespo, Ángel Gabriel  (VC21007) <br>
+        </p>
+        <p>Copyright - 2023</p>
     </footer>
 </body>
 </html>
