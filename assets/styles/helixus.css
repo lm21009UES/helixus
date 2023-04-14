@@ -1,7 +1,3 @@
-body p {
-  background-color: red;
-}
-
 .row {
   display: flex;
   flex-wrap: wrap;
@@ -46,6 +42,38 @@ body p {
   flex-shrink: 0;
   flex-basis: auto;
   width: 50%;
+}
+
+.col-auto {
+  flex-shrink: 0;
+  width: auto;
+}
+
+.btn {
+  display: inline-block;
+  text-align: center;
+  cursor: pointer;
+  border: 1px solid transparent;
+  border-radius: 0.25rem;
+  padding: 0.5rem;
+  font-size: 120%;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: white;
+  border: 1px solid hsla(0, 0%, 0%, 0.12);
+  border-radius: 0.2rem;
+}
+
+.card-body {
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: auto;
+  padding: 1rem;
 }
 
 .main .documentation .buttons .colorized-buttons .red-colour-button {
