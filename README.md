@@ -1,6 +1,7 @@
 # helixus
+![Helixus_](https://user-images.githubusercontent.com/102541759/232254123-5496bc07-4191-42be-b7ca-99c8fe97c080.jpeg)
 
-# Descripción: 
+# Descripcion:
  El proyecto en cuestión consiste en una biblioteca tipo bootstrap para interactuar con sitios web. En este caso, vamos a documentar la biblioteca que hemos creado.
 
 # Nombre de la librería: 
