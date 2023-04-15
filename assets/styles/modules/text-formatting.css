@@ -1,5 +1,17 @@
 .bold-text-format {
-  font-weight: "bold";
+  font-style: bold;
+}
+
+.italic-text-format {
+  font-style: italic;
+}
+
+.underline-text-format {
+  text-decoration: underline;
+}
+
+.strike-text-format {
+  text-decoration: line-through;
 }
 
 /*# sourceMappingURL=text-formatting.css.map */
