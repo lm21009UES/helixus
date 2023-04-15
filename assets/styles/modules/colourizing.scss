@@ -1,28 +1,45 @@
 @import './formats/colours';
+@import './formats/sizes';
+
+$background-width: 15em;
+$background-height: 2em;
+
+//Clase génerica. Me permite evitar repetir todo.
+.background-style {
+  width: $background-width;
+  height: $background-height;
+  text-align: center;
+}
 
 //Background colours
 .set-red-background-colour{
   background-color: $red-colour;
+  @extend .background-style;
 }
 .set-yellow-background-colour{
   background-color: $yellow-colour;
+  @extend .background-style;
 }
 .set-green-background-colour{
   background-color: $green-colour;
+  @extend .background-style;
 }
 .set-blue-background-colour{
   background-color: $blue-color;
+  @extend .background-style;
 }
 .set-lightblue-background-colour{
   background-color: $light-blue-colour;
+  @extend .background-style;
 }
 .set-white-background-colour{
   background-color: $white-colour;
+  @extend .background-style;
 }
 .set-black-background-colour{
   background-color: $black-colour;
+  @extend .background-style;
 }
-
 
 //Font colours
 .set-red-font-colour{

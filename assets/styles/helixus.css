@@ -38,6 +38,12 @@
   font-size: 10px;
 }
 
+.background-style, .set-black-background-colour, .set-white-background-colour, .set-lightblue-background-colour, .set-blue-background-colour, .set-green-background-colour, .set-yellow-background-colour, .set-red-background-colour {
+  width: 15em;
+  height: 2em;
+  text-align: center;
+}
+
 .set-red-background-colour {
   background-color: #BF616A;
 }

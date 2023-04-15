@@ -2,9 +2,88 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Formularios | Helixus</title>
+    <link rel="stylesheet" href="./../styles/helixus.css">
 </head>
 <body>
+    <header class="header"></header>
+    <main class="main">
+        <section class="formularies-documentation">
+            <h1>Formularios</h1>
+            <p>Entre diferentes formatos de formularios disponibles, tenemos: </p>
 
+            <article class="side-to-side">
+                <h2>Input por defecto: </h2>
+                <form method="get" class="default-input-form">
+                    <article class="top-input">
+                        <label for="top-example-input" >Example title</label>
+                        <input type="text" id="top-example-input" placeholder="Ejemplo">
+                    </article>
+
+                    <article class="bottom-input">
+                        <label for="bottom-example-input" >Example title</label>
+                        <input type="text" id="bottom-example-input" placeholder="Ejemplo">
+                    </article>
+                </form>
+            </article>
+            <article class="side-to-side">
+                <h2>Una caja al lado dela otra: </h2>
+                <form method="get" class="side-to-side-form">
+                    <article class="top-input">
+                        <input type="text" placeholder="Ejemplo">
+                    </article>
+
+                    <article class="bottom-input">
+                        <input type="text" placeholder="Ejemplo">
+                    </article>
+                </form>
+            </article>
+            <article class="email-input-format">
+                <h2>Un ejemplo de ingreso de datos para un correo: </h2>
+                <form method="get" class="gmail-input-form">
+                    <article class="left-input">
+                        <input type="text" placeholder="Nombre">
+                    </article>
+
+                    <article class="middle-input">
+                        <input type="text" placeholder="Apellido">
+                    </article>
+
+                    <article class="right-input">
+                        <input type="text" placeholder="Correo">
+                    </article>
+
+                    <article class="message-subject">
+                        <label for="w3review">Ingresa el asunto: </label>
+                        <textarea id="w3review" name="w3review" rows="4" cols="50"></textarea>
+                        <button>Enviar</button>
+                    </article>
+                </form>
+            </article>
+            <article class="register-input">
+                <form class="register-form">
+                    <article class="get-full-name">
+                        <input type="text" id="get-name" placeholder="Nombres: ">
+                        <input type="text" id="get-surname" placeholder="Apellidos: ">
+                    </article>
+                    <article class="get-credentials">
+                        <input type="text" id="get-email" placeholder="Correo electrónico: ">
+                        <input type="password" id="get-password" placeholder="Clave: ">
+                        <input type="password" id="get-password-again" placeholder="Repetir clave: ">
+                    </article>
+                    <article class="get-sex">
+                        <input type="radio" name="hm" value="h"> Hombre
+                        <input type="radio" name="hm" value="m"> Mujer
+                    </article>
+                    <article class="finish">
+                        <input type="submit" value="Enviar">
+                        <input type="reset" value="Borrar">
+                    </article>
+                </form>
+            </article>
+
+        </section>
+    </main>
+    <footer class="footer"></footer>
 </body>
 </html>
