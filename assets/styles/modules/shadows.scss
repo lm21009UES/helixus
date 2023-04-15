@@ -1,3 +1,26 @@
 @import './formats/shadows';
+@import "../helixus.css";
+@import "../modules/text-formatting.css";
+@import "../modules/spacing-borders";
 
+.shadow-none{
+    box-shadow: none;
+}
 
+.shadow-small{
+    padding: $size-5;
+    margin: $size-1;
+    background-color: white;
+    border-radius: 0.25rem;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.07)
+}
+
+.shadow-medium{
+    @extend .shadow-small;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+.shadow-larges{
+    @extend .shadow-small;
+    box-shadow: 0 1rem 3rem hsla(0, 0%, 0%, 0.17);
+}
