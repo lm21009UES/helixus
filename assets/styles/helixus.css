@@ -94,6 +94,11 @@
   color: #2E3440;
 }
 
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
 .row {
   display: flex;
   flex-wrap: wrap;
@@ -172,18 +177,8 @@
   padding: 1rem;
 }
 
-* {
-  margin: 0;
-  box-sizing: border-box;
-}
-
-body{
-  font-family: sans-serif;
-  padding: 90px 20px 0;
-}
-
 .header {
-  background: linear-gradient(#5E81AC, #2E3440);
+  background-color: #5E81AC;
   height: 80px;
   position: fixed;
   width: 100%;
