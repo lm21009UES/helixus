@@ -1,23 +1,48 @@
-@import './colours';
+@import './formats/colours';
 
-.red-colour-button{
+//Background colours
+.set-red-background-colour{
   background-color: $red-colour;
 }
-.yellow-colour-button{
+.set-yellow-background-colour{
   background-color: $yellow-colour;
 }
-.green-colour-button{
+.set-green-background-colour{
   background-color: $green-colour;
 }
-.blue-colour-button{
+.set-blue-background-colour{
   background-color: $blue-color;
 }
-.lightblue-colour-button{
+.set-lightblue-background-colour{
   background-color: $light-blue-colour;
 }
-.white-colour-button{
+.set-white-background-colour{
   background-color: $white-colour;
 }
-.black-colour-button{
+.set-black-background-colour{
   background-color: $black-colour;
+}
+
+
+//Font colours
+.set-red-font-colour{
+  color: $red-colour;
+}
+.set-yellow-font-colour{
+  color: $yellow-colour;
+}
+.set-green-font-colour{
+  color: $green-colour;
+}
+.set-blue-font-colour{
+  color: $blue-color;
+}
+.set-lightblue-font-colour{
+  color: $light-blue-colour;
+}
+.set-white-font-colour{
+  color: $white-colour;
+}
+.set-black-font-colour{
+  color: $black-colour;
 }

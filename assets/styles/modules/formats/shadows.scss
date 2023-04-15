@@ -1,0 +1,9 @@
+//Use mode: box-shadow: posx poxy blur growth box-colour
+
+@import './colours';
+
+$box-pos-x: 5px;
+$box-pos-y: 5px;
+$box-blur: 0;
+$box-growth-factor: 0px;
+$box-shadow-color: $black-colour;

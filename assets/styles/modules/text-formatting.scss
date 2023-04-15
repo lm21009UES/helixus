@@ -1,16 +1,5 @@
-//Text sizes
-$size-1: 35px;
-$size-2: 30px;
-$size-3: 25px;
-$size-4: 20px;
-$size-5: 15px;
-$size-6: 10px;
-
-//Text format
-$bold-format: bold;
-$italic-format: italic;
-$underline-format: underline;
-$strike-format: line-through;
+@import './formats/text-format';
+@import './formats/sizes';
 
 .bold-text-format{
   font-style: $bold-format;
@@ -28,4 +17,27 @@ $strike-format: line-through;
   text-decoration:  $strike-format;
 }
 
+.text-size-1{
+  font-size: $size-1;
+}
+
+.text-size-2{
+  font-size: $size-2;
+}
+
+.text-size-3{
+  font-size: $size-3;
+}
+
+.text-size-4{
+  font-size: $size-4;
+}
+
+.text-size-5{
+  font-size: $size-5;
+}
+
+.text-size-6{
+  font-size: $size-6;
+}
 
