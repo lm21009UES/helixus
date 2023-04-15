@@ -255,7 +255,7 @@ img {
   cursor: pointer;
 }
 
-.badge {
+.badge, .badge-icono {
   display: inline-block;
   padding: 0.3rem;
   font-size: 0.75rem;
@@ -266,6 +266,12 @@ img {
   text-align: center;
   white-space: nowrap;
   border-radius: 0.15rem;
+}
+
+.badge-icono {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  border-radius: 50rem;
 }
 
 @media (max-width: 768px) {
