@@ -4,6 +4,12 @@
 @import './modules/text-formatting';
 @import './modules/colourizing';
 
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
 .row{
     display: flex;
     flex-wrap: wrap;
@@ -80,4 +86,134 @@
     flex-shrink: 1;
     flex-basis: auto;
     padding: 1rem;
+}
+
+.header{
+    background-color: $blue-color;
+    height: 80px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+.nav{
+    display: flex;
+    justify-content: center;
+    max-width: 992px;
+    margin: 0 auto;
+}
+
+.nav-link{
+    color: $white-colour;
+    text-decoration: none;
+}
+
+.logo{
+    font-size: 30px;
+    font-weight: bold;
+    padding: 0 40px;
+    line-height: 60px;
+}
+
+nav .logo img{
+    width: 60px;
+    height: 70px;
+    padding-top: 10px;
+}
+
+
+.nav-menu{
+    display: flex;
+    margin-right: 40px;
+    list-style: none;
+}
+
+.nav-menu-item{
+    font-size: 18px;
+    margin: 0 10px;
+    line-height: 80px;
+    text-transform: uppercase;
+    width: max-content;
+}
+
+.nav-menu-link{
+    padding: 8px 12px;
+    border-radius: 3px;
+}
+
+.nav-menu-link:hover{
+    background-color: #034574;
+    transition: 0.5s;
+}
+
+img{
+    width: 40px;
+    height: auto;
+}
+
+.nav-toggle{
+    background-color: none;
+    border: none;
+    align-self: center;
+    margin: none;
+    display: none;
+    cursor: pointer
+}
+
+@media(max-width: 768px){
+    .header{
+        background-color: $black-colour;
+        height: 60px;
+        position: fixed;
+        width: 100%;
+        top: 0;
+        left: 0;
+    }
+    .logo{
+        font-size: 30px;
+        font-weight: bold;
+        padding: 0 40px;
+        line-height: 40px;
+    }
+    nav .logo img{
+        width: 40px;
+        height: 50px;
+        padding-top: 10px;
+    }
+    .nav-menu{
+        flex-direction: column;
+        align-items: center;
+        margin-right: 20px;
+        background-color: $black-colour;
+        position: fixed;
+        left: 0;
+        top: 60px;
+        width: 100%;
+        padding: 20px 0;
+
+        height: calc(100% - 60px);
+        overflow-y: auto;
+        left: 100%;
+        transition: left 0.3s;
+    }
+    
+    .nav-toggle{
+        display: block;
+        padding-right: 20px;
+    }
+
+    .nav-menu-visible{
+        left: 0;
+    }
+    .nav-menu-link:hover{
+        transition: 0.5s;
+    }
+    img{
+        width: 30px;
+        height: auto;
+    }
+    .nav{
+        justify-content: space-between;
+    }
 }
