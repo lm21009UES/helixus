@@ -6,28 +6,26 @@
     <link rel="stylesheet" href="./../styles/helixus.css">
 </head>
 <body>
-    <header class="header"></header>
     <main class="main">
         <section class="formularies-documentation">
             <h1>Formularios</h1>
             <p>Entre diferentes formatos de formularios disponibles, tenemos: </p>
-
-            <article class="side-to-side">
-                <h2>Input por defecto: </h2>
+            <article class="default-form">
+                <h2>Input por defecto: default-form</h2>
                 <form method="get" class="default-input-form">
                     <article class="top-input">
-                        <label for="top-example-input" >Example title</label>
+                        <label for="top-example-input">Título de ejemplo: </label>
                         <input type="text" id="top-example-input" placeholder="Ejemplo">
                     </article>
 
                     <article class="bottom-input">
-                        <label for="bottom-example-input" >Example title</label>
+                        <label for="bottom-example-input">Ejemplo de título: </label>
                         <input type="text" id="bottom-example-input" placeholder="Ejemplo">
                     </article>
                 </form>
             </article>
-            <article class="side-to-side">
-                <h2>Una caja al lado dela otra: </h2>
+            <article class="side-to-side-form">
+                <h2>Una caja al lado dela otra: side-to-side-form</h2>
                 <form method="get" class="side-to-side-form">
                     <article class="top-input">
                         <input type="text" placeholder="Ejemplo">
@@ -39,7 +37,7 @@
                 </form>
             </article>
             <article class="email-input-format">
-                <h2>Un ejemplo de ingreso de datos para un correo: </h2>
+                <h2>Un ejemplo de ingreso de datos para un correo: email-input-format</h2>
                 <form method="get" class="gmail-input-form">
                     <article class="left-input">
                         <input type="text" placeholder="Nombre">
@@ -54,26 +52,27 @@
                     </article>
 
                     <article class="message-subject">
-                        <label for="w3review">Ingresa el asunto: </label>
-                        <textarea id="w3review" name="w3review" rows="4" cols="50"></textarea>
+                        <label for="subject">Ingresa el asunto: </label>
+                        <textarea id="subject"></textarea>
                         <button>Enviar</button>
                     </article>
                 </form>
             </article>
             <article class="register-input">
+                <h2>Un formulario de registro: register-input</h2>
                 <form class="register-form">
                     <article class="get-full-name">
-                        <input type="text" id="get-name" placeholder="Nombres: ">
-                        <input type="text" id="get-surname" placeholder="Apellidos: ">
+                        <input type="text" id="get-name" placeholder="Nombres: " required>
+                        <input type="text" id="get-surname" placeholder="Apellidos: " required>
                     </article>
                     <article class="get-credentials">
-                        <input type="text" id="get-email" placeholder="Correo electrónico: ">
-                        <input type="password" id="get-password" placeholder="Clave: ">
-                        <input type="password" id="get-password-again" placeholder="Repetir clave: ">
+                        <input type="text" id="get-email" placeholder="Correo electrónico: " required>
+                        <input type="password" id="get-password" placeholder="Clave: " required>
+                        <input type="password" id="get-password-again" placeholder="Repetir clave: " required>
                     </article>
                     <article class="get-sex">
-                        <input type="radio" name="hm" value="h"> Hombre
-                        <input type="radio" name="hm" value="m"> Mujer
+                        <input type="radio" name="hm" value="h" required> Hombre
+                        <input type="radio" name="hm" value="m" required> Mujer
                     </article>
                     <article class="finish">
                         <input type="submit" value="Enviar">
@@ -81,9 +80,25 @@
                     </article>
                 </form>
             </article>
+            <article class="send-files">
+                <h2>Envío de documentos: send-files-form</h2>
+                <form class="send-files-form">
+                    <label for="sender-name">Nombre completo del emisor: </label>
+                    <input type="text" id="sender-name" required>
 
+                    <label for="email">Correo electrónico destino: </label>
+                    <input type="email" id="email" required>
+
+                    <label for="file-to-send">Documento a enviar: </label>
+                    <input type="file" id="file-to-send" accept="*/*" required>
+
+                    <label for="message">Mensaje: </label>
+                    <textarea id="message" required></textarea>
+
+                    <button type="submit">Enviar</button>
+                </form>
+            </article>
         </section>
     </main>
-    <footer class="footer"></footer>
 </body>
 </html>
