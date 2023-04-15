@@ -1,3 +1,47 @@
+.bold-text-format {
+  font-style: bold;
+}
+
+.italic-text-format {
+  font-style: italic;
+}
+
+.underline-text-format {
+  text-decoration: underline;
+}
+
+.strike-text-format {
+  text-decoration: line-through;
+}
+
+.red-colour-button {
+  background-color: #BF616A;
+}
+
+.yellow-colour-button {
+  background-color: #EBCB8B;
+}
+
+.green-colour-button {
+  background-color: #A3BE8C;
+}
+
+.blue-colour-button {
+  background-color: #5E81AC;
+}
+
+.lightblue-colour-button {
+  background-color: #88C0D0;
+}
+
+.white-colour-button {
+  background-color: #ECEFF4;
+}
+
+.black-colour-button {
+  background-color: #2E3440;
+}
+
 .row {
   display: flex;
   flex-wrap: wrap;
@@ -74,28 +118,6 @@
   flex-shrink: 1;
   flex-basis: auto;
   padding: 1rem;
-}
-
-.main .documentation .buttons .colorized-buttons .red-colour-button {
-  background-color: #BF616A;
-}
-.main .documentation .buttons .colorized-buttons .yellow-colour-button {
-  background-color: #EBCB8B;
-}
-.main .documentation .buttons .colorized-buttons .green-colour-button {
-  background-color: #A3BE8C;
-}
-.main .documentation .buttons .colorized-buttons .blue-colour-button {
-  background-color: #5E81AC;
-}
-.main .documentation .buttons .colorized-buttons .lightblue-colour-button {
-  background-color: #88C0D0;
-}
-.main .documentation .buttons .colorized-buttons .white-colour-button {
-  background-color: #ECEFF4;
-}
-.main .documentation .buttons .colorized-buttons .black-colour-button {
-  background-color: #2E3440;
 }
 
 /*# sourceMappingURL=helixus.css.map */

@@ -1,12 +1,8 @@
 //Colours
 //Using the nord colorscheme. Source: https://www.nordtheme.com/
-$red-colour: #BF616A;
-$yellow-colour: #EBCB8B;
-$green-colour: #A3BE8C;
-$blue-color: #5E81AC;
-$light-blue-colour: #88C0D0;
-$white-colour: #ECEFF4;
-$black-colour: #2E3440;
+
+@import './modules/text-formatting';
+@import './modules/colourizing';
 
 .row{
     display: flex;
@@ -84,34 +80,4 @@ $black-colour: #2E3440;
     flex-shrink: 1;
     flex-basis: auto;
     padding: 1rem;
-}
-
-.main{
-    .documentation{
-        .buttons{
-            .colorized-buttons{
-                .red-colour-button{
-                    background-color: $red-colour;
-                }
-                .yellow-colour-button{
-                    background-color: $yellow-colour;
-                }
-                .green-colour-button{
-                    background-color: $green-colour;
-                }
-                .blue-colour-button{
-                    background-color: $blue-color;
-                }
-                .lightblue-colour-button{
-                    background-color: $light-blue-colour;
-                }
-                .white-colour-button{
-                    background-color: $white-colour;
-                }
-                .black-colour-button{
-                    background-color: $black-colour;
-                }
-            }
-        }
-    }
 }

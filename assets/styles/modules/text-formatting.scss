@@ -1,0 +1,31 @@
+//Text sizes
+$size-1: 35px;
+$size-2: 30px;
+$size-3: 25px;
+$size-4: 20px;
+$size-5: 15px;
+$size-6: 10px;
+
+//Text format
+$bold-format: bold;
+$italic-format: italic;
+$underline-format: underline;
+$strike-format: line-through;
+
+.bold-text-format{
+  font-style: $bold-format;
+}
+
+.italic-text-format{
+  font-style: $italic-format;
+}
+
+.underline-text-format{
+  text-decoration:  $underline-format;
+}
+
+.strike-text-format{
+  text-decoration:  $strike-format;
+}
+
+
