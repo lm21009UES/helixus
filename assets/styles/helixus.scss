@@ -4,11 +4,28 @@
 @import './modules/text-formatting';
 @import './modules/colourizing';
 
+$width: 300px;
+$padding: 10px;
+$bgcolor: rgb(52,52,52);
+$hovercolor: rgb(23,23,23);
+$width-collapsed: 50px;
+
 * {
     margin: 0;
     box-sizing: border-box;
 }
+//
+//<<<<<<< HEAD
+//=======
+.body-mar{
+    padding: 90px;
+    margin-left: 250px;
+}
+.body-bars{
+    padding: 90px;
+}
 
+//>>>>>>> 10c3ac55635c788566a6ae2e417e1ead5b5cff78
 .row{
     display: flex;
     flex-wrap: wrap;
@@ -55,6 +72,40 @@
     width: 50%;
 }
 
+.col-7{
+    flex-shrink: 0;
+    flex-basis: auto;
+    width: 58.3333333%;
+}
+
+.col-8{
+    flex-shrink: 0;
+    flex-basis: auto;
+    width: 66.6666667%;
+}
+
+.col-9{
+    flex-shrink: 0;
+    flex-basis: auto;
+    width: 75%;
+}
+
+.col-10{
+    flex-shrink: 0;
+    flex-basis: auto;
+    width: 83.3333333%;
+}
+.col-11{
+    flex-shrink: 0;
+    flex-basis: auto;
+    width: 91.6666667%;
+}
+.col-12{
+    flex-shrink: 0;
+    flex-basis: auto;
+    width: 100%;
+}
+
 .col-auto{
     flex-shrink: 0;
     width: auto;
@@ -68,6 +119,39 @@
     border-radius: 0.25rem;
     padding: 0.5rem;
     font-size: 120%;
+}
+
+.btn-outline-blue{
+    @extend .btn;
+    color: blue;
+    border-color: blue;
+}
+
+.btn-outline-blue:hover{
+    background-color: blue;
+    color: white;
+}
+
+.btn-outline-green{
+    @extend .btn;
+    color: green;
+    border-color: green;
+}
+
+.btn-outline-green:hover{
+    background-color: green;
+    color: white;
+}
+
+.btn-outline-orange{
+    @extend .btn;
+    color: orange;
+    border-color: orange;
+}
+
+.btn-outline-orange:hover{
+    background-color: orange;
+    color: white;
 }
 
 .card{
@@ -152,10 +236,10 @@ img{
 }
 
 .nav-toggle{
-    background-color: none;
+    //background-color: none;
     border: none;
     align-self: center;
-    margin: none;
+    //margin: none;
     display: none;
     cursor: pointer
 }
@@ -234,5 +318,113 @@ img{
     }
     .nav{
         justify-content: space-between;
+    }
+}
+
+#sidemenu{
+    background-color: $bgcolor;
+    color: white;
+    position: fixed;
+    height: 88%;
+    left: 0;
+    top: 12.4%;
+    overflow-y: auto;
+}
+
+#sidemenu a{
+    color: white;
+    text-decoration: none;
+}
+
+/*HEADER*/
+
+#sidemenu #header{
+    box-sizing: border-box;
+    border-bottom: solid 1px $hovercolor;
+}
+#sidemenu #header #title{
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+#sidemnu #header #title, #sidemenu #header #menu-btn{
+    vertical-align: middle;
+}
+#sidemenu #header #menu-btn{
+    display: inline-block;
+}
+#sidemenu #header #menu-btn{
+    cursor: pointer;
+    padding: 10px;
+    width: $width-collapsed;
+    box-sizing: border-box;
+}
+
+#sidemenu #header #menu-btn:hover{
+    background-color: $hovercolor;
+}
+
+#sidemenu #header #menu-btn .bth-hambruger{
+    background-color: #fff;
+    width: 100%;
+    height: 2px;
+    margin: 5px 0;
+}
+
+/*PROFILE*/
+#sidemenu #profile{
+    border-bottom: solid 1px $hovercolor;
+    padding: $padding 0;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#sidemenu #profile #photo, #sidemenu #profile #name{
+    font-size: 24px;
+    padding: $padding 0;
+    overflow: hidden;
+}
+
+/*ITEM*/
+#sidemenu #menu-item{
+    overflow: hidden;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+#sidemenu #menu-item .item{
+    width: $width;
+}
+#sidemenu #menu-item .item.title{
+    font-size: 14px;
+    vertical-align: middle;
+    overflow: hidden;
+    display: inline-block;
+}
+#sidemenu #menu-item .item a{
+    display: block;
+}
+#sidemenu #menu-item .item a:hover{
+    background-color: $hovercolor;
+}
+#sidemenu #menu-item .item .icon{
+    box-sizing: border-box;
+    padding: $padding;
+    width: $width-collapsed;
+}
+#sidemenu #menu-item .item .title{
+    padding: $padding 0;
+    text-align: center;
+}
+
+#sidemenu #menu-item .item.separator{
+    height: 1px;
+    border-bottom: solid 1px $hovercolor;
+    margin: 0;
+}
+
+@media (max-width: 1000px){
+    #sidemenu{
+        display: none;
+    }
+    .body-mar{
+        margin-left: 20px;
     }
 }
