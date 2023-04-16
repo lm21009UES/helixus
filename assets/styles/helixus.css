@@ -125,6 +125,12 @@
   box-sizing: border-box;
 }
 
+.main {
+  display: flex;
+  width: 100%;
+  height: 75vh;
+}
+
 .body-mar {
   padding: 90px;
   margin-left: 250px;
@@ -535,6 +541,12 @@ img {
   .body-mar {
     margin-left: 20px;
   }
+}
+.footer {
+  background-color: #2E3440;
+  color: #ECEFF4;
+  justify-content: end;
+  align-items: end;
 }
 
 /*# sourceMappingURL=helixus.css.map */
