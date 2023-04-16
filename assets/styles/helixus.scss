@@ -3,6 +3,7 @@
 
 @import './modules/text-formatting';
 @import './modules/colourizing';
+@import './modules/formats/available-fonts';
 
 $width: 300px;
 $padding: 10px;
@@ -14,9 +15,7 @@ $width-collapsed: 50px;
     margin: 0;
     box-sizing: border-box;
 }
-//
-//<<<<<<< HEAD
-//=======
+
 .body-mar{
     padding: 90px;
     margin-left: 250px;
@@ -25,7 +24,6 @@ $width-collapsed: 50px;
     padding: 90px;
 }
 
-//>>>>>>> 10c3ac55635c788566a6ae2e417e1ead5b5cff78
 .row{
     display: flex;
     flex-wrap: wrap;

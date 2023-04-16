@@ -101,6 +101,26 @@
 }
 
 * {
+  font-size: 20px;
+}
+
+.set-font-1 {
+  font-family: Arial;
+}
+
+.set-font-2 {
+  font-family: sans-serif;
+}
+
+.set-font-3 {
+  font-family: consolas;
+}
+
+.set-font-4 {
+  font-family: Inter;
+}
+
+* {
   margin: 0;
   box-sizing: border-box;
 }

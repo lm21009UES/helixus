@@ -1,5 +1,28 @@
+@import './sizes';
+
 //Fonts
 $font-1: Arial;
 $font-2: sans-serif;
 $font-3: consolas;
 $font-4: Inter;
+
+*{
+  font-size: $size-4;
+}
+
+.set-font-1{
+  font-family: $font-1;
+}
+
+.set-font-2{
+  font-family: $font-2;
+}
+
+.set-font-3{
+  font-family: $font-3;
+}
+
+.set-font-4{
+  font-family: $font-4;
+}
+

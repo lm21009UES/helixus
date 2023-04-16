@@ -6,112 +6,99 @@
 <!--    <link rel="stylesheet" href="./helixus.css">-->
     <link rel="stylesheet" href="assets/styles/helixus.css">
     <script defer src="./assets/styles/index.js"></script>
+    <script defer src="./assets/styles/change-content.js"></script>
 </head>
 <body class="body-mar">
     <header class="header">
         <nav class="nav">
             <a href="#" class="logo nav-link">
-                <img src="./assets/images/temp-promo-img.jpg" alt="GitHub">
+                <img src="./assets/images/icon.png" alt="GitHub">
             </a>
             <button class="nav-toggle" aria-label="Abrir Menú">
                 <img src="./assets/images/bars.png" alt="menu">
             </button>
             <ul class="nav-menu">
-                <li class="nav-menu-item"><a href="#" class="nav-menu-link nav-link">TOP</a></li>
-                <li class="nav-menu-item"><a href="http://github.com/lm21009UES/helixus" class="nav-menu-link nav-link">CODE</a></li>
+                <li class="nav-menu-item"><a href="#" class="nav-menu-link nav-link" id="home">Inicio</a></li>
+                <li class="nav-menu-item"><a href="http://github.com/lm21009UES/helixus" class="nav-menu-link nav-link">Código fuente</a></li>
                 <li class="nav-menu-item"><a href="#about-us" class="nav-menu-link nav-link">ACERCA DE</a></li>
-                <li class="nav-menu-item"><a href="#" class="nav-menu-link nav-link">CONTACTO</a></li>
             </ul>
         </nav>
     </header>
-    <div id="sidemenu" class="menu-colapsed">
-        <!--Header-->
-        <div id="header">
-            <div id="menu-btn">
-                <div class="bth-hambruger"></div>
-                <div class="bth-hambruger"></div>
-                <div class="bth-hambruger"></div>
-            </div>
-        </div>
-        <div id="profile">
-            <div id="name"><span>Helixus</span></div>
-        </div>
-        <!--ITEMS-->
-        <div id="menu-item">
-            <div class="item">
-                <a href="">
-                    <div class="title"><span>Cloud Service</span></div>
-                </a>
-            </div>
-            <div class="item separator"></div>
-            <div class="item">
-                <a href="">
-                    <div class="title"><span>Cloud Service</span></div>
-                </a>
-            </div>
-            <div class="item separator"></div>
-            <div class="item">
-                <a href="">
-                    <div class="title"><span>Cloud Service</span></div>
-                </a>
-            </div>
-            <div class="item separator">
-            </div>
-            <div class="item">
-                <a href="">
-                    <div class="title"><span>Cloud Service</span></div>
-                </a>
-            </div>
-            <div class="item separator"></div>
-            <div class="item">
-                <a href="">
-                    <div class="title"><span>Cloud Service</span></div>
-                </a>
-            </div>
-            <div class="item separator">
-            </div>
-            <div class="item">
-                <a href="">
-                    <div class="title"><span>Cloud Service</span></div>
-                </a>
-            </div>
-            <div class="item separator"></div>
 
-            <div class="item">
-                <a href="">
-                    <div class="title"><span>Cloud Service</span></div>
-                </a>
-            </div>
-            <div class="item separator"></div>
-        </div>
-    </div>
-    <h1>Helixus | Bienvenido</h1>
     <main class="main">
-        <section class="card">
+        <aside id="sidemenu" class="menu-colapsed">
+            <!--Header-->
+            <div id="header">
+                <div id="menu-btn">
+                    <div class="bth-hambruger"></div>
+                    <div class="bth-hambruger"></div>
+                    <div class="bth-hambruger"></div>
+                </div>
+            </div>
+            <div id="profile">
+                <div id="name"><span>Helixus</span></div>
+            </div>
+            <!--ITEMS-->
+            <div id="menu-item">
+                <div class="item">
+                    <a href="#" id="buttons">
+                        <div class="title"><span>Botones</span></div>
+                    </a>
+                </div>
+                <div class="item separator"></div>
+                <div class="item">
+                    <a href="./assets/www/formularies.html">
+                        <div class="title" id="formularies"><span>Formularios</span></div>
+                    </a>
+                </div>
+                <div class="item separator"></div>
+                <div class="item">
+                    <a href="./assets/www/cards.html">
+                        <div class="title" id="cards"><span>Tarjetas</span></div>
+                    </a>
+                </div>
+                <div class="item separator">
+                </div>
+                <div class="item">
+                    <a href="./assets/www/alerts.html">
+                        <div class="title" id="alerts"><span>Alertas</span></div>
+                    </a>
+                </div>
+                <div class="item separator"></div>
+                <div class="item">
+                    <a href="./assets/www/navbars.html">
+                        <div class="title" id="navbars"><span>Barras de navegación</span></div>
+                    </a>
+                </div>
+                <div class="item separator">
+                </div>
+                <div class="item">
+                    <a href="./assets/www/badges-shadows.html">
+                        <div class="title" id="badges-shadows"><span>Badges y sombras</span></div>
+                    </a>
+                </div>
+                <div class="item separator"></div>
+
+                <div class="item">
+                    <a href="./assets/www/containers.html">
+                        <div class="title" id="containers"><span>Contenedores</span></div>
+                    </a>
+                </div>
+                <div class="item separator"></div>
+            </div>
+        </aside>
+        <section class="card" id="content">
+            <h1 class="text-size-1">Helixus | Bienvenido</h1>
             <article class="welcome">
-                <h1>Documentación</h1>
+                <h1 class="text-size-2">Documentación</h1>
             </article>
-            <article class="introductive-welcome">
-                <p>
+            <article class="introductive-welcome" id="inicio">
+                <p class="set-font-1">
                     Helixus es el nombre que recibe la biblioteca de manipulación de contenido. Con helixus, puedes fácilmente agregar múltiples estilos a tu página.
                     Dispone de una variedad de formatos de texto, sombras, separación de contenido, bordes, animaciones,
                     entre otros. Puedes aplicar cada uno de estos estilos a formularios, tarjetas, alertas, barras de navegación, badges y botones.
                     A continuación, se detalla de la manera más clara y precisa posible cómo utilizar esta biblioteca, escrita en CSS.
                 </p>
-            </article>
-        </section>
-        <section class="documentation">
-            <articles class="navigation-bars">
-<!--                -->
-            </articles>
-            <article class="cards">
-<!--                -->
-            </article>
-            <article class="badges">
-<!--                -->
-            </article>
-            <article class="element-containers">
-<!--                -->
             </article>
         </section>
     </main>
