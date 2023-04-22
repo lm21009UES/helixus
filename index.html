@@ -9,88 +9,75 @@
     <script defer src="./assets/styles/index.js"></script>
     <script defer src="./assets/styles/change-content.js"></script>
 </head>
-<body class="body-mar">
-    <header class="header">
-        <nav class="nav">
-            <a href="#" class="logo nav-link">
-                <img src="./assets/images/icon.png" alt="GitHub">
+<body>
+    <nav class="nav">
+        <div class="nav_container">
+            <h1 class="nav_title">
+                <img src="/assets/images/icon.jpg" alt="logotipo">
+            </h1>
+            <a href="#menu" class="nav_menu">
+                <img src="/assets/images/lista.png" alt="menu" class="nav_icon">
             </a>
-            <button class="nav-toggle" aria-label="Abrir Menú">
-                <img src="./assets/images/bars.png" alt="menu">
-            </button>
-            <ul class="nav-menu">
-                <li class="nav-menu-item"><a href="#" class="nav-menu-link nav-link" id="home">Inicio</a></li>
-                <li class="nav-menu-item"><a href="http://github.com/lm21009UES/helixus" class="nav-menu-link nav-link">Código fuente</a></li>
-                <li class="nav-menu-item"><a href="#" class="nav-menu-link nav-link">ACERCA DE</a></li>
+            <a href="#" class="nav_menu nav_menu--second">
+                <img src="/assets/images/cerrar.png" alt="cerrar" class="nav_icon ">
+            </a>
+            <div class="nav_boton">
+                <a href="#" class="nav_boton" id="home">Inicio</a>
+                <a href="http://github.com/lm21009UES/helixus" class="nav_boton">Codigo Fuente</a>
+                <a href="#" class="nav_boton">Acerca de</a>
+                <script>
+                    const homeButton = document.getElementById('home');
+                    homeButton.addEventListener('click', function() {
+                        location.reload();
+                    });
+                </script>
+            </div>
+            <ul class="dropdown" id="menu">
+                <h1>Helixus</h1>
+                <li class="dropdown_list">
+                    <a href="#" class="dropdown_link" id="buttons">
+                        <span class="dropdown_span">Botones</span>
+                    </a>
+                </li>
+                <li class="dropdown_list">
+                    <a href="#" class="dropdown_link" id="formularies">
+                        <span class="dropdown_span">Formularios</span>
+                    </a>
+                </li>
+                <li class="dropdown_list">
+                    <a href="#" class="dropdown_link" id="cards">
+                        <span class="dropdown_span">Tarjetas</span>
+                    </a>
+                </li>
+                <li class="dropdown_list">
+                    <a href="#" class="dropdown_link" id="alerts">
+                        <span class="dropdown_span">Alertas</span>
+                    </a>
+                </li>
+                <li class="dropdown_list">
+                    <a href="#" class="dropdown_link" id="home">
+                        <span class="dropdown_span">Inicio</span>
+                    </a>
+                </li>
+                <li class="dropdown_list">
+                    <a href="#" class="dropdown_link" id="navbars">
+                        <span class="dropdown_span">Barras de Navegacion</span>
+                    </a>
+                </li>
+                <li class="dropdown_list">
+                    <a href="#" class="dropdown_link" id="badges-shadows">
+                        <span class="dropdown_span">Badges y sombras</span>
+                    </a>
+                </li>
+                <li class="dropdown_list">
+                    <a href="#" class="dropdown_link" id="containers">
+                        <span class="dropdown_span">Contenedores</span>
+                    </a>
+                </li>
             </ul>
-        </nav>
-    </header>
-
-    <aside id="sidemenu" class="menu-colapsed">
-        <!--Header-->
-        <div id="header">
-            <div id="menu-btn">
-                <div class="bth-hambruger"></div>
-                <div class="bth-hambruger"></div>
-                <div class="bth-hambruger"></div>
-            </div>
         </div>
-        <div id="profile">
-            <div id="name" class="text-size-1">
-                <span>Helixus</span>
-            </div>
-        </div>
-        <!--ITEMS-->
-        <div id="menu-item">
-            <div class="item">
-                <a href="#" id="buttons">
-                    <div class="title"><span>Botones</span></div>
-                </a>
-            </div>
-            <div class="item separator"></div>
-            <div class="item">
-                <a href="#">
-                    <div class="title" id="formularies"><span>Formularios</span></div>
-                </a>
-            </div>
-            <div class="item separator"></div>
-            <div class="item">
-                <a href="#">
-                    <div class="title" id="cards"><span>Tarjetas</span></div>
-                </a>
-            </div>
-            <div class="item separator">
-            </div>
-            <div class="item">
-                <a href="#">
-                    <div class="title" id="alerts"><span>Alertas</span></div>
-                </a>
-            </div>
-            <div class="item separator"></div>
-            <div class="item">
-                <a href="#">
-                    <div class="title" id="navbars"><span>Barras de navegación</span></div>
-                </a>
-            </div>
-            <div class="item separator">
-            </div>
-            <div class="item">
-                <a href="#">
-                    <div class="title" id="badges-shadows"><span>Badges y sombras</span></div>
-                </a>
-            </div>
-            <div class="item separator"></div>
-
-            <div class="item">
-                <a href="#">
-                    <div class="title" id="containers"><span>Contenedores</span></div>
-                </a>
-            </div>
-            <div class="item separator"></div>
-        </div>
-    </aside>
-
-    <main class="main">
+    </nav>
+    <main class="main" id="home">
         <section id="content">
             <h1 class="text-size-1">Helixus | Bienvenido</h1>
             <article class="welcome">

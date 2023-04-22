@@ -34,6 +34,7 @@ input, textarea{
 .default-form{
   display: flex;
   flex-direction: column;
+  align-items: center;
   margin: 3%;
   font-weight: $bold-format;
 
@@ -81,17 +82,16 @@ input, textarea{
 
 .side-to-side-form{
   display: flex;
+  flex-direction: column;
   align-items: center;
-  margin: 3%;
-  height: 30%;
 
   h2{
     padding-bottom: 1%;
-    width: 45%;
   }
 
   form{
     width: 40%;
+    height: 50%;
     display: flex;
     flex-direction: column;
     background-color: #BF616A;
@@ -128,6 +128,7 @@ input, textarea{
 .email-input-format{
   display: flex;
   flex-direction: column;
+  align-items: center;
   margin: 3%;
 
   h2{
@@ -176,9 +177,77 @@ input, textarea{
         border-radius: 25px;
       }
     }
-
   }
 
 }
 
+.register-input {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 3%;
 
+  h2 {
+    padding-bottom: 1%;
+    width: 45%;
+  }
+
+  form {
+    background: linear-gradient(90deg, #77ff80, rgba(46, 206, 183, 0.95));
+    padding: 5%;
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    grid-template-columns: repeat(2, 40%);
+
+    input {
+      width: 100%;
+      height: 35px;
+      margin-top: 5%;
+      display: flex;
+      align-items: center;
+    }
+
+    .get-sender-data {
+      display: grid;
+      gap: 10%;
+    }
+
+    .get-sex {
+      display: flex;
+      flex-direction: row;
+
+      label {
+        padding-top: 10%;
+        padding-left: 1%;
+      }
+
+      .male, .female{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-right: 10%;
+        padding-top: 5%;
+
+        input[type="radio"]{
+          transform: scale(1.25);
+        }
+
+        span{
+          padding-left: 5%;
+        }
+      }
+
+      .finish{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+
+        .submit, .cancel{
+          border: 1px solid black;
+          border-radius: 5%;
+        }
+      }
+    }
+  }
+}

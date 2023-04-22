@@ -84,11 +84,18 @@
                 </form>
             </article>
             <article class="register-input">
-                <h2>Un formulario de registro: register-input</h2>
+                <h2>
+                    Un formulario de registro: <span class="underline-text-format">register-input</span>
+                </h2>
                 <form class="register-form">
+                    <article class="text">
+                        <span class="bold-text-format text-size-3">
+                            Sign up
+                        </span>
+                    </article>
                     <article class="get-full-name">
-                        <input type="text" id="get-name" placeholder="Nombres: " required>
-                        <input type="text" id="get-surname" placeholder="Apellidos: " required>
+                        <input type="text" id="get-name" placeholder="Nombre: " required>
+                        <input type="text" id="get-surname" placeholder="Apellido: " required>
                     </article>
                     <article class="get-credentials">
                         <input type="text" id="get-email" placeholder="Correo electrónico: " required>
@@ -96,12 +103,18 @@
                         <input type="password" id="get-password-again" placeholder="Repetir clave: " required>
                     </article>
                     <article class="get-sex">
-                        <input type="radio" name="hm" value="h" required> Hombre
-                        <input type="radio" name="hm" value="m" required> Mujer
+                        <article class="male">
+                            <input class="radio-button" type="radio" name="hm" value="h" required>
+                            <span>Hombre</span>
+                        </article>
+                        <article class="female">
+                            <input class="radio-button" type="radio" name="hm" value="m" required>
+                            <span>Mujer</span>
+                        </article>
                     </article>
                     <article class="finish">
-                        <input type="submit" value="Enviar">
-                        <input type="reset" value="Borrar">
+                        <button class="submit">Enviar</button>
+                        <button class="cancel">Cancelar</button>
                     </article>
                 </form>
             </article>
