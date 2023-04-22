@@ -6,54 +6,79 @@
     <link rel="stylesheet" href="./../styles/helixus.css">
 </head>
 <body>
-    <main class="main">
-        <section class="formularies-documentation">
-            <h1>Formularios</h1>
-            <p>Entre diferentes formatos de formularios disponibles, tenemos: </p>
-            <article class="default-form">
-                <h2>Input por defecto: default-form</h2>
+    <main class="main set-font-2">
+        <section>
+            <article class="title">
+                <h1 class="text-size-1">Formularios</h1>
+                <p>Entre diferentes formatos de formularios disponibles, tenemos: </p>
+            </article>
+            <article class="default-form ">
+                <h2 class="text-size-3">
+                    Input por defecto: <span class="underline-text-format">default-form</span>
+                </h2>
                 <form method="get" class="default-input-form">
                     <article class="top-input">
-                        <label for="top-example-input">Título de ejemplo: </label>
+                        <label for="top-example-input">Nombre: </label>
                         <input type="text" id="top-example-input" placeholder="Ejemplo">
                     </article>
 
                     <article class="bottom-input">
-                        <label for="bottom-example-input">Ejemplo de título: </label>
+                        <label for="bottom-example-input">Apellido: </label>
                         <input type="text" id="bottom-example-input" placeholder="Ejemplo">
+                    </article>
+
+                    <article class="send-button">
+                        <button>Enviar</button>
                     </article>
                 </form>
             </article>
             <article class="side-to-side-form">
-                <h2>Una caja al lado dela otra: side-to-side-form</h2>
+                <h2>
+                    Una caja al lado de otra: <span class="underline-text-format">side-to-side-form</span>
+                </h2>
                 <form method="get" class="side-to-side-form">
-                    <article class="top-input">
-                        <input type="text" placeholder="Ejemplo">
-                    </article>
+                   <article class="get-data">
+                       <article class="left-input">
+                           <label for="top-example-input-left">Nombre: </label>
+                           <input type="text" id="top-example-input-left" placeholder="Ejemplo">
+                       </article>
 
-                    <article class="bottom-input">
-                        <input type="text" placeholder="Ejemplo">
+                       <article class="right-input">
+                           <label for="top-example-input-right">Apellido: </label>
+                           <input type="text" id="top-example-input-right" placeholder="Ejemplo">
+                       </article>
+                   </article>
+                    <article class="send-button">
+                        <button>Enviar</button>
                     </article>
                 </form>
             </article>
             <article class="email-input-format">
-                <h2>Un ejemplo de ingreso de datos para un correo: email-input-format</h2>
+                <h2>
+                    Un ejemplo de ingreso de datos para un correo:
+                    <span class="underline-text-format">email-input-format</span>
+                </h2>
                 <form method="get" class="gmail-input-form">
-                    <article class="left-input">
-                        <input type="text" placeholder="Nombre">
-                    </article>
+                    <article class="get-sender-data">
+                        <article class="left-input">
+                            <input type="text" placeholder="Ingresá tu nombre: ">
+                        </article>
 
-                    <article class="middle-input">
-                        <input type="text" placeholder="Apellido">
-                    </article>
+                        <article class="middle-input">
+                            <input type="text" placeholder="Ingresá tu apellido: ">
+                        </article>
 
-                    <article class="right-input">
-                        <input type="text" placeholder="Correo">
+                        <article class="right-input">
+                            <input type="text" placeholder="Ingresá tu correo: ">
+                        </article>
                     </article>
 
                     <article class="message-subject">
-                        <label for="subject">Ingresa el asunto: </label>
+                        <label for="subject">Asunto: </label>
                         <textarea id="subject"></textarea>
+                    </article>
+
+                    <article class="send-button">
                         <button>Enviar</button>
                     </article>
                 </form>

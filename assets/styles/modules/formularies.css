@@ -1,0 +1,55 @@
+.bold-text-format {
+  font-style: bold;
+}
+
+.italic-text-format {
+  font-style: italic;
+}
+
+.underline-text-format {
+  text-decoration: underline;
+}
+
+.strike-text-format {
+  text-decoration: line-through;
+}
+
+.text-size-1 {
+  font-size: 35px;
+}
+
+.text-size-2 {
+  font-size: 30px;
+}
+
+.text-size-3 {
+  font-size: 25px;
+}
+
+.text-size-4 {
+  font-size: 20px;
+}
+
+.text-size-5 {
+  font-size: 15px;
+}
+
+.text-size-6 {
+  font-size: 10px;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  gap: 5%;
+}
+
+input {
+  border: 1px black solid;
+  border-radius: 15px;
+}
+
+/*# sourceMappingURL=formularies.css.map */

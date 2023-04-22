@@ -1,0 +1,41 @@
+.btn, .btn-outline-orange, .btn-outline-green, .btn-outline-blue {
+  display: inline-block;
+  text-align: center;
+  cursor: pointer;
+  border: 1px solid transparent;
+  border-radius: 0.25rem;
+  padding: 0.5rem;
+  font-size: 120%;
+}
+
+.btn-outline-blue {
+  color: blue;
+  border-color: blue;
+}
+
+.btn-outline-blue:hover {
+  background-color: blue;
+  color: white;
+}
+
+.btn-outline-green {
+  color: green;
+  border-color: green;
+}
+
+.btn-outline-green:hover {
+  background-color: green;
+  color: white;
+}
+
+.btn-outline-orange {
+  color: orange;
+  border-color: orange;
+}
+
+.btn-outline-orange:hover {
+  background-color: orange;
+  color: white;
+}
+
+/*# sourceMappingURL=buttons.css.map */

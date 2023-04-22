@@ -403,23 +403,44 @@
   font-size: 25px;
 }
 
-* {
-  margin: 0;
-  box-sizing: border-box;
+.btn, .btn-outline-orange, .btn-outline-green, .btn-outline-blue {
+  display: inline-block;
+  text-align: center;
+  cursor: pointer;
+  border: 1px solid transparent;
+  border-radius: 0.25rem;
+  padding: 0.5rem;
+  font-size: 120%;
 }
 
-.main {
-  display: flex;
-  width: 80vw;
+.btn-outline-blue {
+  color: blue;
+  border-color: blue;
 }
 
-.body-mar {
-  padding: 90px;
-  margin-left: 250px;
+.btn-outline-blue:hover {
+  background-color: blue;
+  color: white;
 }
 
-.body-bars {
-  padding: 90px;
+.btn-outline-green {
+  color: green;
+  border-color: green;
+}
+
+.btn-outline-green:hover {
+  background-color: green;
+  color: white;
+}
+
+.btn-outline-orange {
+  color: orange;
+  border-color: orange;
+}
+
+.btn-outline-orange:hover {
+  background-color: orange;
+  color: white;
 }
 
 .row {
@@ -509,44 +530,306 @@
   width: auto;
 }
 
-.btn, .btn-outline-orange, .btn-outline-green, .btn-outline-blue {
-  display: inline-block;
+.bold-text-format {
+  font-style: bold;
+}
+
+.italic-text-format {
+  font-style: italic;
+}
+
+.underline-text-format {
+  text-decoration: underline;
+}
+
+.strike-text-format {
+  text-decoration: line-through;
+}
+
+.text-size-1 {
+  font-size: 35px;
+}
+
+.text-size-2 {
+  font-size: 30px;
+}
+
+.text-size-3 {
+  font-size: 25px;
+}
+
+.text-size-4 {
+  font-size: 20px;
+}
+
+.text-size-5 {
+  font-size: 15px;
+}
+
+.text-size-6 {
+  font-size: 10px;
+}
+
+.background-style, .set-red-background-colour, .set-yellow-background-colour, .set-green-background-colour, .set-blue-background-colour, .set-lightblue-background-colour, .set-white-background-colour, .set-black-background-colour {
+  width: 15em;
+  height: 2em;
   text-align: center;
-  cursor: pointer;
-  border: 1px solid transparent;
-  border-radius: 0.25rem;
-  padding: 0.5rem;
-  font-size: 120%;
 }
 
-.btn-outline-blue {
-  color: blue;
-  border-color: blue;
+.set-red-background-colour {
+  background-color: #BF616A;
 }
 
-.btn-outline-blue:hover {
-  background-color: blue;
-  color: white;
+.set-yellow-background-colour {
+  background-color: #EBCB8B;
 }
 
-.btn-outline-green {
-  color: green;
-  border-color: green;
+.set-green-background-colour {
+  background-color: #A3BE8C;
 }
 
-.btn-outline-green:hover {
-  background-color: green;
-  color: white;
+.set-blue-background-colour {
+  background-color: #5E81AC;
 }
 
-.btn-outline-orange {
-  color: orange;
-  border-color: orange;
+.set-lightblue-background-colour {
+  background-color: #88C0D0;
 }
 
-.btn-outline-orange:hover {
-  background-color: orange;
-  color: white;
+.set-white-background-colour {
+  background-color: #ECEFF4;
+}
+
+.set-black-background-colour {
+  background-color: #2E3440;
+}
+
+.set-red-colour {
+  background-color: #BF616A;
+}
+
+.set-yellow-colour {
+  background-color: #EBCB8B;
+}
+
+.set-green-colour {
+  background-color: #A3BE8C;
+}
+
+.set-blue-colour {
+  background-color: #5E81AC;
+}
+
+.set-lightblue-colour {
+  background-color: #88C0D0;
+}
+
+.set-white-colour {
+  background-color: #ECEFF4;
+}
+
+.set-black-colour {
+  background-color: #2E3440;
+}
+
+.set-red-font-colour {
+  color: #BF616A;
+}
+
+.set-yellow-font-colour {
+  color: #EBCB8B;
+}
+
+.set-green-font-colour {
+  color: #A3BE8C;
+}
+
+.set-blue-font-colour {
+  color: #5E81AC;
+}
+
+.set-lightblue-font-colour {
+  color: #88C0D0;
+}
+
+.set-white-font-colour {
+  color: #ECEFF4;
+}
+
+.set-black-font-colour {
+  color: #2E3440;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  margin: 3%;
+}
+
+input, textarea {
+  display: inline-block;
+  border: 1px black solid;
+  border-radius: 15px;
+  text-align: center;
+  margin: 0 1%;
+}
+
+.send-button, .email-input-format form .send-button, .side-to-side-form form .send-button, .default-form form .send-button {
+  width: 25%;
+  padding-top: 10%;
+  padding-left: 2%;
+}
+.send-button button, .email-input-format form .send-button button, .side-to-side-form form .send-button button, .default-form form .send-button button {
+  border: 1px solid black;
+  border-radius: 25px;
+  width: 100%;
+  height: 100%;
+}
+
+.default-form {
+  display: flex;
+  flex-direction: column;
+  margin: 3%;
+  font-weight: bold;
+}
+.default-form h2 {
+  padding-bottom: 1%;
+}
+.default-form form {
+  margin-left: 1%;
+  display: grid;
+  place-items: center;
+  background-color: #88C0D0;
+  height: 350px;
+  width: 25%;
+}
+.default-form form label {
+  margin: 1%;
+}
+.default-form form article {
+  display: grid;
+  gap: 5%;
+  height: 100px;
+}
+.default-form form article .top-input {
+  background-color: #88C0D0;
+}
+.default-form form article .bottom-input {
+  background-color: #88C0D0;
+}
+.default-form form .send-button {
+  height: 25%;
+  padding-top: 0;
+}
+.default-form form .send-button button {
+  background-color: #F5BDC8;
+  border-radius: 25px;
+}
+
+.side-to-side-form {
+  display: flex;
+  align-items: center;
+  margin: 3%;
+  height: 30%;
+}
+.side-to-side-form h2 {
+  padding-bottom: 1%;
+  width: 45%;
+}
+.side-to-side-form form {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  background-color: #BF616A;
+}
+.side-to-side-form form .get-data {
+  display: flex;
+  flex-direction: row;
+}
+.side-to-side-form form .get-data label {
+  padding-top: 1%;
+  padding-left: 1%;
+}
+.side-to-side-form form .get-data .left-input, .side-to-side-form form .get-data .right-input {
+  padding-top: 1%;
+  padding-left: 3%;
+}
+.side-to-side-form form .send-button {
+  display: grid;
+  place-items: center;
+  padding-bottom: 3%;
+}
+.side-to-side-form form .send-button button {
+  width: 100px;
+  background-color: #88C0D0;
+}
+
+.email-input-format {
+  display: flex;
+  flex-direction: column;
+  margin: 3%;
+}
+.email-input-format h2 {
+  padding-bottom: 1%;
+  width: 45%;
+}
+.email-input-format form {
+  background-color: #EBCB8B;
+  padding: 5%;
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+  grid-template-columns: repeat(2, 40%);
+}
+.email-input-format form input {
+  width: 100%;
+  height: 35px;
+}
+.email-input-format form .get-sender-data {
+  display: grid;
+  gap: 10%;
+}
+.email-input-format form .message-subject {
+  padding-top: 1%;
+  display: grid;
+  gap: 10%;
+}
+.email-input-format form .message-subject label {
+  padding-top: 10%;
+  padding-left: 1%;
+}
+.email-input-format form .message-subject textarea {
+  width: 100%;
+  height: 100px;
+}
+.email-input-format form .send-button button {
+  background-color: #98bb46;
+  border-radius: 25px;
+}
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.main {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  width: 80vw;
+  height: 80vh;
+}
+
+.body-mar {
+  padding: 90px;
+  margin-left: 250px;
+}
+
+.body-bars {
+  padding: 90px;
 }
 
 .card {
@@ -573,6 +856,8 @@
   width: 100%;
   top: 0;
   left: 0;
+  padding: 0;
+  margin: 0;
 }
 
 .nav {
@@ -823,12 +1108,6 @@ img {
   .body-mar {
     margin-left: 20px;
   }
-}
-.footer {
-  background-color: #2E3440;
-  color: #ECEFF4;
-  justify-content: end;
-  align-items: end;
 }
 
 /*# sourceMappingURL=helixus.css.map */

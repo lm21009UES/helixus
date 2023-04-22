@@ -1,10 +1,13 @@
 //Colours
 //Using the nord colorscheme. Source: https://www.nordtheme.com/
-@use 'modific';
+@use 'modules/modific';
 @import './modules/text-formatting';
 @import './modules/colourizing';
 @import './modules/formats/available-fonts';
 @import './modules/alerts';
+@import './modules/buttons';
+@import './modules/columns';
+@import "./modules/formularies";
 
 $width: 300px;
 $padding: 10px;
@@ -18,9 +21,11 @@ $width-collapsed: 50px;
 }
 
 .main{
+    margin: 0;
+    padding: 0;
     display: flex;
     width: 80vw;
-    //height: 75vh;
+    height: 80vh;
 }
 
 .body-mar{
@@ -29,135 +34,6 @@ $width-collapsed: 50px;
 }
 .body-bars{
     padding: 90px;
-}
-
-.row{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 5%;
-}
-
-.col{
-    flex-shrink: 0;
-    flex-basis: 0;
-}
-
-.col-1{
-    flex-shrink: 0;
-    flex-basis: auto;
-    width: 8.3333333%;
-}
-
-.col-2{
-    flex-shrink: 0;
-    flex-basis: auto;
-    width: 16.6666667%;
-}
-
-.col-3{
-    flex-shrink: 0;
-    flex-basis: auto;
-    width: 25%;
-}
-
-.col-4{
-    flex-shrink: 0;
-    flex-basis: auto;
-    width: 33.3333333%;
-}
-
-.col-5{
-    flex-shrink: 0;
-    flex-basis: auto;
-    width: 41.6666667%;
-}
-
-.col-6{
-    flex-shrink: 0;
-    flex-basis: auto;
-    width: 50%;
-}
-
-.col-7{
-    flex-shrink: 0;
-    flex-basis: auto;
-    width: 58.3333333%;
-}
-
-.col-8{
-    flex-shrink: 0;
-    flex-basis: auto;
-    width: 66.6666667%;
-}
-
-.col-9{
-    flex-shrink: 0;
-    flex-basis: auto;
-    width: 75%;
-}
-
-.col-10{
-    flex-shrink: 0;
-    flex-basis: auto;
-    width: 83.3333333%;
-}
-.col-11{
-    flex-shrink: 0;
-    flex-basis: auto;
-    width: 91.6666667%;
-}
-.col-12{
-    flex-shrink: 0;
-    flex-basis: auto;
-    width: 100%;
-}
-
-.col-auto{
-    //flex-shrink: 0;
-    width: auto;
-}
-
-.btn{
-    display: inline-block;
-    text-align: center;
-    cursor: pointer;
-    border: 1px solid transparent;
-    border-radius: 0.25rem;
-    padding: 0.5rem;
-    font-size: 120%;
-}
-
-.btn-outline-blue{
-    @extend .btn;
-    color: blue;
-    border-color: blue;
-}
-
-.btn-outline-blue:hover{
-    background-color: blue;
-    color: white;
-}
-
-.btn-outline-green{
-    @extend .btn;
-    color: green;
-    border-color: green;
-}
-
-.btn-outline-green:hover{
-    background-color: green;
-    color: white;
-}
-
-.btn-outline-orange{
-    @extend .btn;
-    color: orange;
-    border-color: orange;
-}
-
-.btn-outline-orange:hover{
-    background-color: orange;
-    color: white;
 }
 
 .card{
@@ -184,6 +60,8 @@ $width-collapsed: 50px;
     width: 100%;
     top: 0;
     left: 0;
+    padding: 0;
+    margin: 0;
 }
 
 .nav{
@@ -306,7 +184,7 @@ img{
         left: 100%;
         transition: left 0.3s;
     }
-    
+
     .nav-toggle{
         display: block;
         padding-right: 20px;
@@ -433,11 +311,4 @@ img{
     .body-mar{
         margin-left: 20px;
     }
-}
-
-.footer{
-    background-color: $black-colour;
-    color: $white-colour;
-    justify-content: end;
-    align-items: end;
 }
