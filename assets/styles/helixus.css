@@ -99,6 +99,7 @@
   background-color: black;
   --img1: scale(1);
   --img2: scale(0);
+  width: 100%;
 }
 
 .nav:has(.dropdown:target) {
@@ -996,6 +997,10 @@ input, textarea {
   box-sizing: border-box;
 }
 
+body {
+  width: 100%;
+}
+
 .main {
   margin: 0;
   padding: 0;
@@ -1013,6 +1018,8 @@ input, textarea {
   padding: 90px;
   width: 85%;
   margin: 0 7.5%;
+  width: calc(100% - 60px);
+  margin: 0 30px;
 }
 
 .row {

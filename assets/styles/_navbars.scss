@@ -2,6 +2,7 @@
     background-color: black;
     --img1: scale(1);
     --img2: scale(0);
+    width: 100%;
 }
 
 .nav:has(.dropdown:target){
