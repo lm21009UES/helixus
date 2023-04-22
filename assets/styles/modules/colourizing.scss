@@ -41,6 +41,29 @@ $background-height: 2em;
   @extend .background-style;
 }
 
+//Background colours
+.set-red-colour{
+  background-color: $red-colour;
+}
+.set-yellow-colour{
+  background-color: $yellow-colour;
+}
+.set-green-colour{
+  background-color: $green-colour;
+}
+.set-blue-colour{
+  background-color: $blue-color;
+}
+.set-lightblue-colour{
+  background-color: $light-blue-colour;
+}
+.set-white-colour{
+  background-color: $white-colour;
+}
+.set-black-colour{
+  background-color: $black-colour;
+}
+
 //Font colours
 .set-red-font-colour{
   color: $red-colour;
