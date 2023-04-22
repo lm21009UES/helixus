@@ -15,19 +15,25 @@
 }
 
 .bg-blue {
-  background-color: blue;
+  background-color: var(#5E81AC);
 }
 .bg-yellow {
-  background-color: yellow;
+  background-color: var(#EBCB8B);
 }
 .bg-red {
-  background-color: red;
+  background-color: var(#BF616A);
 }
-.bg-orange {
-  background-color: orange;
+.bg-green {
+  background-color: var(#A3BE8C);
 }
 .bg-black {
-  background-color: black;
+  background-color: var(#2E3440);
+}
+.bg-ligth-blue {
+  background-color: var(#88C0D0);
+}
+.bg-white {
+  background-color: var(#ECEFF4);
 }
 
 .ocult {
