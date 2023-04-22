@@ -1,0 +1,53 @@
+@import "./colourizing";
+@import "./formats/available-fonts";
+@import "./formats/sizes";
+
+.generic-style{
+  //Usamos inline-block para ajustar automáticamente al tamaño del texto
+  display: inline-block;
+  width: auto;
+  height: 50px;
+  padding: 10px;
+  border: 1px black solid;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+
+.column{
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+}
+
+.warning-alert{
+  @extend .generic-style;
+  background-color: $blue-color;
+  font-family: $font-1;
+  font-size: $size-3;
+  color: $white-colour;
+}
+
+.successfully-alert{
+  @extend .generic-style;
+  background-color: $green-colour;
+  color: $white-colour;
+  font-family: $font-1;
+  font-size: $size-3;
+}
+
+.error-alert{
+  @extend .generic-style;
+  background-color: $yellow-colour;
+  color: $black-colour;
+  font-family: $font-1;
+  font-size: $size-3;
+}
+
+.danger-alert{
+  @extend .generic-style;
+  background-color: $red-colour;
+  color: $white-colour;
+  font-family: $font-1;
+  font-size: $size-3;
+}
+

@@ -148,6 +148,160 @@
   font-family: Inter;
 }
 
+.background-style, .set-red-background-colour, .set-yellow-background-colour, .set-green-background-colour, .set-blue-background-colour, .set-lightblue-background-colour, .set-white-background-colour, .set-black-background-colour {
+  width: 15em;
+  height: 2em;
+  text-align: center;
+}
+
+.set-red-background-colour {
+  background-color: #BF616A;
+}
+
+.set-yellow-background-colour {
+  background-color: #EBCB8B;
+}
+
+.set-green-background-colour {
+  background-color: #A3BE8C;
+}
+
+.set-blue-background-colour {
+  background-color: #5E81AC;
+}
+
+.set-lightblue-background-colour {
+  background-color: #88C0D0;
+}
+
+.set-white-background-colour {
+  background-color: #ECEFF4;
+}
+
+.set-black-background-colour {
+  background-color: #2E3440;
+}
+
+.set-red-colour {
+  background-color: #BF616A;
+}
+
+.set-yellow-colour {
+  background-color: #EBCB8B;
+}
+
+.set-green-colour {
+  background-color: #A3BE8C;
+}
+
+.set-blue-colour {
+  background-color: #5E81AC;
+}
+
+.set-lightblue-colour {
+  background-color: #88C0D0;
+}
+
+.set-white-colour {
+  background-color: #ECEFF4;
+}
+
+.set-black-colour {
+  background-color: #2E3440;
+}
+
+.set-red-font-colour {
+  color: #BF616A;
+}
+
+.set-yellow-font-colour {
+  color: #EBCB8B;
+}
+
+.set-green-font-colour {
+  color: #A3BE8C;
+}
+
+.set-blue-font-colour {
+  color: #5E81AC;
+}
+
+.set-lightblue-font-colour {
+  color: #88C0D0;
+}
+
+.set-white-font-colour {
+  color: #ECEFF4;
+}
+
+.set-black-font-colour {
+  color: #2E3440;
+}
+
+* {
+  font-size: 20px;
+}
+
+.set-font-1 {
+  font-family: Arial;
+}
+
+.set-font-2 {
+  font-family: sans-serif;
+}
+
+.set-font-3 {
+  font-family: consolas;
+}
+
+.set-font-4 {
+  font-family: Inter;
+}
+
+.generic-style, .danger-alert, .error-alert, .successfully-alert, .warning-alert {
+  display: inline-block;
+  width: auto;
+  height: 50px;
+  padding: 10px;
+  border: 1px black solid;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+
+.column {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+}
+
+.warning-alert {
+  background-color: #5E81AC;
+  font-family: Arial;
+  font-size: 25px;
+  color: #ECEFF4;
+}
+
+.successfully-alert {
+  background-color: #A3BE8C;
+  color: #ECEFF4;
+  font-family: Arial;
+  font-size: 25px;
+}
+
+.error-alert {
+  background-color: #EBCB8B;
+  color: #2E3440;
+  font-family: Arial;
+  font-size: 25px;
+}
+
+.danger-alert {
+  background-color: #BF616A;
+  color: #ECEFF4;
+  font-family: Arial;
+  font-size: 25px;
+}
+
 * {
   margin: 0;
   box-sizing: border-box;

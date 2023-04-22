@@ -1,0 +1,95 @@
+.background-style, .set-black-background-colour, .set-white-background-colour, .set-lightblue-background-colour, .set-blue-background-colour, .set-green-background-colour, .set-yellow-background-colour, .set-red-background-colour {
+  width: 15em;
+  height: 2em;
+  text-align: center;
+}
+
+.set-red-background-colour {
+  background-color: #BF616A;
+}
+
+.set-yellow-background-colour {
+  background-color: #EBCB8B;
+}
+
+.set-green-background-colour {
+  background-color: #A3BE8C;
+}
+
+.set-blue-background-colour {
+  background-color: #5E81AC;
+}
+
+.set-lightblue-background-colour {
+  background-color: #88C0D0;
+}
+
+.set-white-background-colour {
+  background-color: #ECEFF4;
+}
+
+.set-black-background-colour {
+  background-color: #2E3440;
+}
+
+.set-red-colour {
+  background-color: #BF616A;
+}
+
+.set-yellow-colour {
+  background-color: #EBCB8B;
+}
+
+.set-green-colour {
+  background-color: #A3BE8C;
+}
+
+.set-blue-colour {
+  background-color: #5E81AC;
+}
+
+.set-lightblue-colour {
+  background-color: #88C0D0;
+}
+
+.set-white-colour {
+  background-color: #ECEFF4;
+}
+
+.set-black-colour {
+  background-color: #2E3440;
+}
+
+.set-red-font-colour {
+  color: #BF616A;
+}
+
+.set-yellow-font-colour {
+  color: #EBCB8B;
+}
+
+.set-green-font-colour {
+  color: #A3BE8C;
+}
+
+.set-blue-font-colour {
+  color: #5E81AC;
+}
+
+.set-lightblue-font-colour {
+  color: #88C0D0;
+}
+
+.set-white-font-colour {
+  color: #ECEFF4;
+}
+
+.set-black-font-colour {
+  color: #2E3440;
+}
+
+.warning-alert {
+  background-color: #5E81AC;
+}
+
+/*# sourceMappingURL=alerts.css.map */
