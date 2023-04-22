@@ -1,5 +1,9 @@
 @import "../helixus.css";
 @import "../modules/text-formatting.css";
+.main {
+  width: 100vw;
+}
+
 .shadow-none {
   box-shadow: none;
 }

@@ -18,7 +18,7 @@ $width-collapsed: 50px;
 
 .main{
     display: flex;
-    //width: 100%;
+    width: 80vw;
     //height: 75vh;
 }
 
@@ -33,6 +33,7 @@ $width-collapsed: 50px;
 .row{
     display: flex;
     flex-wrap: wrap;
+    gap: 5%;
 }
 
 .col{
@@ -111,7 +112,7 @@ $width-collapsed: 50px;
 }
 
 .col-auto{
-    flex-shrink: 0;
+    //flex-shrink: 0;
     width: auto;
 }
 
