@@ -18,10 +18,14 @@ $width-collapsed: 50px;
     box-sizing: border-box;
 }
 
+body{
+    width: 100%;
+}
+
 .main{
     display: flex;
-    width: 85%;
-    margin: 0 7.5%;
+    width: calc(100% - 60px);
+    margin: 0 30px;
     //height: 75vh;
 }
 .row{
