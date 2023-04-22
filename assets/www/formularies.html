@@ -119,7 +119,11 @@
                 </form>
             </article>
             <article class="send-files">
-                <h2>Envío de documentos: send-files-form</h2>
+                <h2>
+                    Envío de documentos: <span class="underline-text-format">
+                    send-files-form
+                </span>
+                </h2>
                 <form class="send-files-form">
                     <label for="sender-name">Nombre completo del emisor: </label>
                     <input type="text" id="sender-name" required>
@@ -128,7 +132,7 @@
                     <input type="email" id="email" required>
 
                     <label for="file-to-send">Documento a enviar: </label>
-                    <input type="file" id="file-to-send" accept="*/*" required>
+                    <input type="file" id="file-to-send" accept="*/*" required style="display: block">
 
                     <label for="message">Mensaje: </label>
                     <textarea id="message" required></textarea>
