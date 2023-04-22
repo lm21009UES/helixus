@@ -509,7 +509,7 @@
   width: auto;
 }
 
-.container, .container-sm, .container-md, .container-lg, .container-xl, .container-xxl {
+.container, .container-fluid, .container-sm, .container-md, .container-lg, .container-xl, .container-xxl {
   width: 100%;
   padding-right: 15px;
   padding-left: 15px;
