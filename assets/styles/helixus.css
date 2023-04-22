@@ -1,3 +1,13 @@
+@import './modules/modific';
+@import 'navbars';
+@import './modules/text-formatting';
+@import './modules/colourizing';
+@import './modules/formats/available-fonts';
+@import './modules/alerts';
+@import './modules/buttons';
+@import './modules/columns';
+@import "./modules/formularies";
+
 @charset "UTF-8";
 .redondear-1 {
   border-radius: 10%;
