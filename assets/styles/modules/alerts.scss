@@ -5,18 +5,23 @@
 .generic-style{
   //Usamos inline-block para ajustar automáticamente al tamaño del texto
   display: inline-block;
-  width: auto;
   height: 50px;
   padding: 10px;
   border: 1px black solid;
   border-radius: 10px;
   box-sizing: border-box;
+  margin: 5%;
 }
 
 .column{
-  width: 100vw;
+  width: 80vw;
   display: flex;
-  justify-content: center;
+
+  .alerts{
+    display: flex;
+    flex-direction: column;
+    padding-top: 5%;
+  }
 }
 
 .warning-alert{
