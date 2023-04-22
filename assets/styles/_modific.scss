@@ -1,0 +1,102 @@
+.redondear{
+    &-1{
+        border-radius: 10%;
+    }
+    &-2{
+        border-radius: 20%;
+    }
+    &-3{
+        border-radius: 30%;
+    }
+    &-4{
+        border-radius: 40px;
+    }
+    &-5{
+        border-radius: 50px;
+    }
+}
+
+.bg{
+    &-blue{
+        background-color: blue;
+    }
+    &-yellow{
+        background-color: yellow;
+    }
+    &-red{
+        background-color: red;
+    }
+    &-orange{
+        background-color: orange;
+    }
+    &-black{
+        background-color: black;
+    }
+}
+
+.ocult{
+    display: none;
+}
+
+.mov{
+    &-fijo{
+        &-derecha{
+            position: fixed;
+            right: 5%;
+            &-centro{
+                position: fixed;
+                right: 5%;
+                top: 50%;
+            }
+            &-abajo{
+                position: fixed;
+                right: 5%;
+                bottom: 0%;
+            }
+        }
+        &-izquierda{
+            position: fixed;
+            left: 5%;
+            &-centro{
+                position: fixed;
+                top: 50%;
+            }
+            &-abajo{
+                position: fixed;
+                left: 5%;
+                bottom: 0%;
+            }
+        }
+    }
+}
+
+.mov{
+    &-inmobible{
+        &-derecha{
+            position: absolute;
+            right: 0%;
+            &-centro{
+                position: absolute;
+                right: 0%;
+                top: 50vh;
+            }
+            &-abajo{
+                position: absolute;
+                right: 0%;
+                top: 95vh;
+            }
+        }
+        &-izquierda{
+            position: absolute;
+            left: 0%;
+            &-centro{
+                position: absolute;
+                top: 50vh;
+            }
+            &-abajo{
+                position: absolute;
+                top: 95vh;
+            }
+        }
+    }
+}

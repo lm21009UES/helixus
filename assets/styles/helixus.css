@@ -1,3 +1,94 @@
+.redondear-1 {
+  border-radius: 10%;
+}
+.redondear-2 {
+  border-radius: 20%;
+}
+.redondear-3 {
+  border-radius: 30%;
+}
+.redondear-4 {
+  border-radius: 40px;
+}
+.redondear-5 {
+  border-radius: 50px;
+}
+
+.bg-blue {
+  background-color: blue;
+}
+.bg-yellow {
+  background-color: yellow;
+}
+.bg-red {
+  background-color: red;
+}
+.bg-orange {
+  background-color: orange;
+}
+.bg-black {
+  background-color: black;
+}
+
+.ocult {
+  display: none;
+}
+
+.mov-fijo-derecha {
+  position: fixed;
+  right: 5%;
+}
+.mov-fijo-derecha-centro {
+  position: fixed;
+  right: 5%;
+  top: 50%;
+}
+.mov-fijo-derecha-abajo {
+  position: fixed;
+  right: 5%;
+  bottom: 0%;
+}
+.mov-fijo-izquierda {
+  position: fixed;
+  left: 5%;
+}
+.mov-fijo-izquierda-centro {
+  position: fixed;
+  top: 50%;
+}
+.mov-fijo-izquierda-abajo {
+  position: fixed;
+  left: 5%;
+  bottom: 0%;
+}
+
+.mov-inmobible-derecha {
+  position: absolute;
+  right: 0%;
+}
+.mov-inmobible-derecha-centro {
+  position: absolute;
+  right: 0%;
+  top: 50vh;
+}
+.mov-inmobible-derecha-abajo {
+  position: absolute;
+  right: 0%;
+  top: 95vh;
+}
+.mov-inmobible-izquierda {
+  position: absolute;
+  left: 0%;
+}
+.mov-inmobible-izquierda-centro {
+  position: absolute;
+  top: 50vh;
+}
+.mov-inmobible-izquierda-abajo {
+  position: absolute;
+  top: 95vh;
+}
+
 .bold-text-format {
   font-style: bold;
 }
