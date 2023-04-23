@@ -1696,13 +1696,22 @@ body {
 }
 
 .card {
+  position: relative;
   display: flex;
   flex-direction: column;
-  min-width: 0;
-  word-wrap: break-word;
-  background-color: white;
-  border: 1px solid hsla(0, 0%, 0%, 0.12);
-  border-radius: 0.2rem;
+  background-color: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 0.25rem;
+}
+
+.card-body {
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: auto;
+}
+
+.card-title {
+  margin-bottom: 0.5rem;
 }
 
 .card-body {
