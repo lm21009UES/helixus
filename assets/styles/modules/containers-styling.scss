@@ -1,0 +1,80 @@
+@import './formats/containers';
+@import './colourizing';
+
+.code{
+  width: 45%;
+  background-color: #2E3440;
+  margin-top: 1%;
+
+  .middle{
+    margin-left: 3%;
+  }
+
+  .internal{
+    margin-left: 5%;
+  }
+}
+
+main{
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+
+  .description{
+    width: 85%;
+  }
+
+  p{
+    margin-left: 1%;
+  }
+
+  .default-container{
+    margin-top: 1%;
+    margin-bottom: 1%;
+
+    //Agregado, para visibilidad:
+    background-color: lightgrey;
+    border: 1px black solid;
+  }
+
+  .responsive-container-modes{
+    display: grid;
+    place-items: center;
+
+    .small-responsive{
+      margin-top: 3%;
+      width: 576px;
+      background-color: #2E3440;
+      border: 1px black solid;
+    }
+
+    .middle-responsive{
+      margin-top: 3%;
+      width: 768px;
+      background-color: #2E3440;
+      border: 1px black solid;
+    }
+
+    .large-responsive{
+      margin-top: 3%;
+      width: 992px;
+      background-color: #2E3440;
+      border: 1px black solid;
+    }
+
+    .xtra-large-responsive{
+      margin-top: 3%;
+      width: 1200px;
+      background-color: #2E3440;
+      border: 1px black solid;
+    }
+
+    .xtra-xtra-large-responsive{
+      margin-top: 3%;
+      width: 1400px;
+      background-color: #2E3440;
+      border: 1px black solid;
+    }
+  }
+}

@@ -1675,6 +1675,194 @@ main .introduction .rounded-buttons ul li, main .colorized-buttons .rounded-butt
   margin: 1%;
 }
 
+.container, .container-fluid, .container-sm, .container-md, .container-lg, .container-xl, .container-xxl {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (min-width: 576px) {
+  .container, .container-sm {
+    max-width: 556px;
+  }
+}
+@media (min-width: 768px) {
+  .container, .container-sm, .container-md {
+    max-width: 740px;
+  }
+}
+@media (min-width: 992px) {
+  .container, .container-sm, .container-md, .container-lg {
+    max-width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .container, .container-sm, .container-md, .container-lg, .container-xl {
+    max-width: 1180px;
+  }
+}
+@media (min-width: 1400px) {
+  .container, .container-sm, .container-md, .container-lg, .container-xl, .container-xxl {
+    min-width: 1380px;
+  }
+}
+.background-style, .set-red-background-colour, .set-yellow-background-colour, .set-green-background-colour, .set-blue-background-colour, .set-lightblue-background-colour, .set-white-background-colour, .set-black-background-colour {
+  width: 15em;
+  height: 2em;
+  text-align: center;
+}
+
+.set-red-background-colour {
+  background-color: #BF616A;
+}
+
+.set-yellow-background-colour {
+  background-color: #EBCB8B;
+}
+
+.set-green-background-colour {
+  background-color: #A3BE8C;
+}
+
+.set-blue-background-colour {
+  background-color: #5E81AC;
+}
+
+.set-lightblue-background-colour {
+  background-color: #88C0D0;
+}
+
+.set-white-background-colour {
+  background-color: #ECEFF4;
+}
+
+.set-black-background-colour {
+  background-color: #2E3440;
+}
+
+.set-red-colour {
+  background-color: #BF616A;
+}
+
+.set-yellow-colour {
+  background-color: #EBCB8B;
+}
+
+.set-green-colour {
+  background-color: #A3BE8C;
+}
+
+.set-blue-colour {
+  background-color: #5E81AC;
+}
+
+.set-lightblue-colour {
+  background-color: #88C0D0;
+}
+
+.set-white-colour {
+  background-color: #ECEFF4;
+}
+
+.set-black-colour {
+  background-color: #2E3440;
+}
+
+.set-red-font-colour {
+  color: #BF616A;
+}
+
+.set-yellow-font-colour {
+  color: #EBCB8B;
+}
+
+.set-green-font-colour {
+  color: #A3BE8C;
+}
+
+.set-blue-font-colour {
+  color: #5E81AC;
+}
+
+.set-lightblue-font-colour {
+  color: #88C0D0;
+}
+
+.set-white-font-colour {
+  color: #ECEFF4;
+}
+
+.set-black-font-colour {
+  color: #2E3440;
+}
+
+.code {
+  width: 45%;
+  background-color: #2E3440;
+  margin-top: 1%;
+}
+.code .middle {
+  margin-left: 3%;
+}
+.code .internal {
+  margin-left: 5%;
+}
+
+main {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+}
+main .description {
+  width: 85%;
+}
+main p {
+  margin-left: 1%;
+}
+main .default-container {
+  margin-top: 1%;
+  margin-bottom: 1%;
+  background-color: lightgrey;
+  border: 1px black solid;
+}
+main .responsive-container-modes {
+  display: grid;
+  place-items: center;
+}
+main .responsive-container-modes .small-responsive {
+  margin-top: 3%;
+  width: 576px;
+  background-color: #2E3440;
+  border: 1px black solid;
+}
+main .responsive-container-modes .middle-responsive {
+  margin-top: 3%;
+  width: 768px;
+  background-color: #2E3440;
+  border: 1px black solid;
+}
+main .responsive-container-modes .large-responsive {
+  margin-top: 3%;
+  width: 992px;
+  background-color: #2E3440;
+  border: 1px black solid;
+}
+main .responsive-container-modes .xtra-large-responsive {
+  margin-top: 3%;
+  width: 1200px;
+  background-color: #2E3440;
+  border: 1px black solid;
+}
+main .responsive-container-modes .xtra-xtra-large-responsive {
+  margin-top: 3%;
+  width: 1400px;
+  background-color: #2E3440;
+  border: 1px black solid;
+}
+
 * {
   margin: 0;
   box-sizing: border-box;

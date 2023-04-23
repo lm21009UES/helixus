@@ -2,9 +2,122 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Contenedores</title>
+    <link rel="stylesheet" href="./../styles/helixus.css">
 </head>
 <body>
+    <main>
+        <section>
+            <article class="title">
+                <h1 class="set-font-1 text-size-1">Contenedores</h1>
+            </article>
+            <article class="description">
+                <p>
+                    En CSS, un contenedor es un elemento que contiene uno o más elementos secundarios.
+                    Un contenedor suele ser un elemento div o de sección y se utiliza para agrupar y
+                    organizar elementos relacionados en una página web.
+                    Un contenedor puede tener un diseño flexible o un diseño de cuadrícula
+                    para que los elementos secundarios se dispongan en un orden determinado.
+                    Las propiedades del contenedor, como la visualización, el contenido de la
+                    justificación y el elemento de alineación, se utilizan para establecer el
+                    comportamiento y la apariencia del contenedor y sus elementos secundarios.
+                </p>
+            </article>
+            <article class="container default-container">
+                <p class="bold-text-format set-font-3">Contenedor por defecto.</p>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Ab accusamus at, blanditiis commodi cum cupiditate ea
+                    excepturi facere iusto nihil nisi nobis perspiciatis
+                    praesentium quaerat quas quisquam rerum voluptate, voluptatum.
 
+                </p>
+
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Animi, consequatur dolorum, eaque eius esse facilis,
+                    fugit harum illo in maxime nihil perspiciatis provident
+                    quod rerum tenetur totam vel vitae voluptas?
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Alias consequuntur, deleniti excepturi fugit incidunt laboriosam,
+                    maiores natus neque quod recusandae sequi similique temporibus vero?
+                    Consequatur consequuntur fuga iusto mollitia nihil?
+                </p>
+            </article>
+            <article class="container-types">
+                Las clases que puedes usar para cada contenedor son:
+                <ul>
+                    <li>.container</li>
+                    <li>.container-fluid</li>
+                    <li>.container-sm</li>
+                    <li>.container-md</li>
+                    <li>.container-lg</li>
+                    <li>.container-xl</li>
+                    <li>.container-xxl</li>
+                </ul>
+
+                <h2 class="text-size-2" style="padding-top: 3%">Código base: </h2>
+                <article class="code">
+                    <p class="set-green-font-colour keys">.container, .container-fluid, .container-sm, .container-md, .container-lg, .container-xl, .container-xxl {</p>
+                        <p class="set-lightblue-font-colour internal">width: 100%;</p>
+                        <p class="set-lightblue-font-colour internal">padding-right: 15px;</p>
+                        <p class="set-lightblue-font-colour internal">padding-left: 15px;</p>
+                        <p class="set-lightblue-font-colour internal">margin-right: auto;</p>
+                        <p class="set-lightblue-font-colour internal">margin-left: auto;</p>
+                    <p class="set-green-font-colour keys">}</p>
+                </article>
+
+            </article>
+            <article class="responsive-container-modes">
+                <h2 class="text-size-2" style="padding-top: 3%">Tipos de contenedores: </h2>
+                <article class="small-responsive code">
+                    <h2 class="set-white-font-colour">Contenedor small para teléfonos móbiles pequeños</h2>
+                    <p class="set-green-font-colour">@media (min-width: 576px) {</p>
+                    <p class="set-blue-font-colour middle">.container, .container-sm{</p>
+                    <p class="set-red-font-colour internal">max-width: 556px;</p>
+                    <p class="set-blue-font-colour middle">}</p>
+                    <p class="set-green-font-colour" style="margin-left: 1%;">}</p>
+                </article>
+
+                <article class="middle-responsive code">
+                    <h2 class="set-white-font-colour">Contenedor small para teléfonos móbiles medianos</h2>
+                    <p class="set-green-font-colour">@media (min-width: 768px) {</p>
+                    <p class="set-blue-font-colour middle">.container, .container-sm, .container-md{</p>
+                    <p class="set-red-font-colour internal">max-width: 740px;</p>
+                    <p class="set-blue-font-colour middle">}</p>
+                    <p class="set-green-font-colour" style="margin-left: 1%;">}</p>
+                </article>
+
+                <article class="large-responsive code">
+                    <h2 class="set-white-font-colour">Contenedor small para tablet</h2>
+                    <p class="set-green-font-colour">@media (min-width: 992px) {</p>
+                    <p class="set-blue-font-colour middle">.container, .container-sm{</p>
+                    <p class="set-red-font-colour internal">max-width: 970px;</p>
+                    <p class="set-blue-font-colour middle">}</p>
+                    <p class="set-green-font-colour" style="margin-left: 1%;">}</p>
+                </article>
+
+                <article class="xtra-large-responsive code">
+                    <h2 class="set-white-font-colour">Contenedor small para laptops</h2>
+                    <p class="set-green-font-colour">@media (min-width: 1200px) {</p>
+                    <p class="set-blue-font-colour middle">.container, .container-sm, .container-md{</p>
+                    <p class="set-red-font-colour internal">max-width: 1180px;</p>
+                    <p class="set-blue-font-colour middle">}</p>
+                    <p class="set-green-font-colour" style="margin-left: 1%;">}</p>
+                </article>
+
+                <article class="xtra-xtra-large-responsive code">
+                    <h2 class="set-white-font-colour">Contenedor small para monitores anchos</h2>
+                    <p class="set-green-font-colour">@media (min-width: 1400px) {</p>
+                    <p class="set-blue-font-colour middle">.container, .container-sm, .container-md{</p>
+                    <p class="set-red-font-colour internal">max-width: 1400px;</p>
+                    <p class="set-blue-font-colour middle">}</p>
+                    <p class="set-green-font-colour" style="margin-left: 1%;">}</p>
+                </article>
+            </article>
+        </section>
+    </main>
 </body>
 </html>

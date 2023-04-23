@@ -48,8 +48,8 @@ containers.addEventListener("click", function() {
     cargarContenido("assets/www/containers.html");
 });
 
-about_us.addEventListener("clik", function (){
-    cargarContenido("assets/www/about-us.html");
+about_us.addEventListener("click", function (){
+    cargarContenido("./assets/www/about-us.html");
 });
 
 // Función para cargar el contenido de la página HTML y reemplazar el contenido del div
