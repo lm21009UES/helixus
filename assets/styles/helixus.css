@@ -1714,6 +1714,12 @@ body {
   margin-bottom: 0.5rem;
 }
 
+.card-img {
+  width: 100%;
+  border-top-left-radius: calc(0.25rem - 1px);
+  border-top-right-radius: calc(0.25rem - 1px);
+}
+
 .card-body {
   flex-grow: 1;
   flex-shrink: 1;
