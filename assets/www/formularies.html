@@ -13,24 +13,77 @@
                 <p>Entre diferentes formatos de formularios disponibles, tenemos: </p>
             </article>
             <article class="default-form ">
-                <h2 class="text-size-3">
-                    Input por defecto: <span class="underline-text-format">default-form</span>
-                </h2>
-                <form method="get" class="default-input-form">
-                    <article class="top-input">
-                        <label for="top-example-input">Nombre: </label>
-                        <input type="text" id="top-example-input" placeholder="Ejemplo">
-                    </article>
+                <article class="example">
+                    <h2 class="text-size-3">
+                        Input por defecto: <span class="underline-text-format">default-form</span>
+                    </h2>
+                    <form method="get" class="default-input-form">
+                        <article class="top-input">
+                            <label for="top-example-input">Nombre: </label>
+                            <input type="text" id="top-example-input" placeholder="Ejemplo">
+                        </article>
 
-                    <article class="bottom-input">
-                        <label for="bottom-example-input">Apellido: </label>
-                        <input type="text" id="bottom-example-input" placeholder="Ejemplo">
-                    </article>
+                        <article class="bottom-input">
+                            <label for="bottom-example-input">Apellido: </label>
+                            <input type="text" id="bottom-example-input" placeholder="Ejemplo">
+                        </article>
 
-                    <article class="send-button">
-                        <button>Enviar</button>
-                    </article>
-                </form>
+                        <article class="send-button">
+                            <button>Enviar</button>
+                        </article>
+                    </form>
+                </article>
+                <article class="code" >
+                    <p class="set-green-font-colour">.default-form{</p>
+                    <p class="middle set-lightblue-font-colour">display: grid;</p>
+                    <p class="internal set-lightblue-font-colour">grid-template-columns: repeat(2, 1fr);</p>
+                    <p class="internal set-lightblue-font-colour">align-items: center;</p>
+                    <p class="internal set-lightblue-font-colour">margin: 3%;</p>
+                    <p class="internal set-lightblue-font-colour">font-weight: $bold-format;</p>
+                    <br>
+                    <p class="internal set-lightblue-font-colour">h2{</p>
+                    <p class="more-internal set-yellow-font-colour">padding-bottom: 1%;</p>
+                    <p class="internal set-lightblue-font-colour">}</p>
+                    <br>
+                    <p class="internal set-lightblue-font-colour">form{</p>
+                    <p class="more-internal set-yellow-font-colour">margin-left: 1%;</p>
+                    <p class="more-internal set-yellow-font-colour">display: flex;</p>
+                    <p class="more-internal set-yellow-font-colour">flex-direction: column;</p>
+                    <p class="more-internal set-yellow-font-colour">place-items: center;</p>
+                    <p class="more-internal set-yellow-font-colour">background-color: $light-blue-colour;</p>
+                    <p class="more-internal set-yellow-font-colour">height: 350px;</p>
+                    <p class="more-internal set-yellow-font-colour">width: 50%;</p>
+                    <br>
+                    <p class="more-internal set-yellow-font-colour">label{</p>
+                    <p class="latest set-yellow-font-colour">margin-top: 5%;</p>
+                    <p class="internal set-lightblue-font-colour">}</p>
+                    <br>
+                    <p class="internal set-lightblue-font-colour">article{</p>
+                    <p class="more-internal set-yellow-font-colour">display: grid;</p>
+                    <p class="more-internal set-yellow-font-colour">gap: 5%;</p>
+                    <p class="more-internal set-yellow-font-colour">height: 100px;</p>
+                    <p class="internal set-lightblue-font-colour">}</p>
+                    <br>
+                    <p class="internal set-lightblue-font-colour">article .top-input{</p>
+                    <p class="more-internal set-yellow-font-colour">background-color: $light-blue-colour;</p>
+                    <p class="internal set-lightblue-font-colour">}</p>
+                    <br>
+                    <p class="internal set-lightblue-font-colour">article .bottom-input{</p>
+                    <p class="more-internal set-yellow-font-colour">background-color: $light-blue-colour;</p>
+                    <p class="internal set-lightblue-font-colour">}</p>
+                    <br>
+                    <p class="internal set-lightblue-font-colour">.send-button{</p>
+                    <p class="more-internal set-yellow-font-colour">@extend .send-button;</p>
+                    <p class="more-internal set-yellow-font-colour">height: 5%;</p>
+                    <p class="more-internal set-yellow-font-colour">margin-top: 5%;</p>
+                    <br>
+                    <p class="latest set-yellow-font-colour">button{</p>
+                    <p class="xd set-red-font-colour">background-color: #F5BDC8;</p>
+                    <p class="xd set-red-font-colour">border-radius: 25px;</p>
+                    <p class="latest set-yellow-font-colour">}</p>
+                    <p class="internal set-lightblue-font-colour">}</p>
+                    <p class="set-green-font-colour">}</p>
+                </article>
             </article>
             <article class="side-to-side-form">
                 <h2>

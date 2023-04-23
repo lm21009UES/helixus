@@ -32,51 +32,60 @@ input, textarea{
 }
 
 .default-form{
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   align-items: center;
   margin: 3%;
   font-weight: $bold-format;
 
-  h2{
-    padding-bottom: 1%;
-  }
-
-  form{
-    margin-left: 1%;
-    display: grid;
-    place-items: center;
-    background-color: $light-blue-colour;
-    height: 350px;
-    width: 25%;
-
-    label{
-      margin: 1%;
+  .example{
+    h2{
+      padding-bottom: 1%;
     }
 
-    article{
-      display: grid;
-      gap: 5%;
-      height: 100px;
-    }
-
-    article .top-input{
+    form{
+      margin-left: 1%;
+      display: flex;
+      flex-direction: column;
+      place-items: center;
       background-color: $light-blue-colour;
-    }
+      height: 350px;
+      width: 50%;
 
-    article .bottom-input{
-      background-color: $light-blue-colour;
-    }
+      label{
+        margin-top: 5%;
+      }
 
-    .send-button{
-      @extend .send-button;
-      height: 25%;
-      padding-top: 0;
-      button{
-        background-color: #F5BDC8;
-        border-radius: 25px;
+      article{
+        display: grid;
+        gap: 5%;
+        height: 100px;
+      }
+
+      article .top-input{
+        background-color: $light-blue-colour;
+      }
+
+      article .bottom-input{
+        background-color: $light-blue-colour;
+      }
+
+      .send-button{
+        @extend .send-button;
+        height: 5%;
+        margin-top: 5%;
+
+        button{
+          background-color: #F5BDC8;
+          border-radius: 25px;
+        }
       }
     }
+  }
+  .code{
+    display: flex;
+    flex-direction: column;
+    background-color: transparent;
   }
 }
 

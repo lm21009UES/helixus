@@ -28,6 +28,30 @@ body{
     width: 100%;
 }
 
+.code {
+    width: auto;
+    background-color: #2E3440;
+    margin-top: 1%;
+}
+.code .middle {
+    margin-left: 3%;
+}
+.code .internal {
+    margin-left: 5%;
+}
+
+.code .more-internal{
+    margin-left: 7%;
+}
+
+.code .latest{
+    margin-left: 10%;
+}
+
+.code .xd{
+    margin-left: 13%;
+}
+
 .main{
     margin: 0;
     padding: 0;
