@@ -39,7 +39,7 @@
 .nav_menu{
     grid-area: img;
     position: relative;
-    left: 70%;
+    left: 60%;
     z-index: 10;
     transform: var(--img1);
 }
@@ -54,6 +54,7 @@
     flex-wrap: wrap;
     color: white;
     font-size: 20px;
+    justify-content: center;
     text-decoration: none;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
