@@ -1,0 +1,48 @@
+@import 'formats/colours';
+
+.main{
+  padding: 1%;
+
+  .introduction{
+    display: grid;
+  }
+
+  .text-size, .text-width, .text-colours, .text-types{
+    margin: 5% 1%;
+  }
+
+  .text-size{
+    ul{
+      li{
+        margin-top: 1%;
+      }
+    }
+  }
+
+  .text-colours{
+    ul{
+      display: grid;
+      place-items: center;
+
+      li{
+        display: grid;
+        place-items: center;
+        margin: 1%;
+      }
+    }
+  }
+
+  .text-types{
+    ul{
+      li{
+        padding-top: 1%;
+        p{
+          display: grid;
+          place-items: center;
+          margin: 1%;
+        }
+      }
+    }
+  }
+
+}

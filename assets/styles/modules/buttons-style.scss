@@ -1,0 +1,68 @@
+@import './formats/containers';
+@import './formats/colours';
+@import "./formats/buttons";
+
+main{
+  padding: 1%;
+  display: flex;
+  flex-direction: column;
+
+  .button-test{
+    display: grid;
+    place-items: center;
+  }
+
+  .introduction, .colorized-buttons{
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+
+    .button-test{
+      display: grid;
+      place-items: center;
+    }
+
+    button{
+      display: grid;
+      place-items: center;
+      width: 30%;
+    }
+
+    button:hover{
+      border: 1px black solid;
+    }
+
+    ul, ol{
+      display: grid;
+      place-items: center;
+
+      li{
+        display: grid;
+        place-items: center;
+        margin-top: 1%;
+      }
+    }
+
+    .button-test{
+      display: grid;
+      place-items: center;
+      margin-top: 5%;
+      width: 25%;
+
+      button{
+        width: 100%;
+        font-size: 20px;
+      }
+    }
+
+    .rounded-buttons{
+      ul{
+        li{
+          display: grid;
+          place-items: center;
+          margin-top: 1%;
+        }
+      }
+    }
+  }
+}

@@ -219,10 +219,12 @@
 }
 .bold-text-format {
   font-style: bold;
+  font-weight: bold;
 }
 
 .italic-text-format {
   font-style: italic;
+  font-weight: italic;
 }
 
 .underline-text-format {
@@ -479,12 +481,13 @@
 
 .generic-style, .danger-alert, .error-alert, .successfully-alert, .warning-alert {
   display: inline-block;
+  width: 30%;
   height: 50px;
   padding: 10px;
   border: 1px black solid;
   border-radius: 10px;
   box-sizing: border-box;
-  margin: 5%;
+  margin: 1%;
 }
 
 .column {
@@ -654,10 +657,12 @@
 
 .bold-text-format {
   font-style: bold;
+  font-weight: bold;
 }
 
 .italic-text-format {
   font-style: italic;
+  font-weight: italic;
 }
 
 .underline-text-format {
@@ -1033,123 +1038,6 @@ input, textarea {
   border-radius: 25px;
 }
 
-* {
-  margin: 0;
-  box-sizing: border-box;
-}
-
-body {
-  width: 100%;
-}
-
-.main {
-  margin: 0;
-  padding: 0;
-  display: flex;
-  width: 80vw;
-  height: 80vh;
-}
-
-.body-mar {
-  padding: 90px;
-  margin-left: 250px;
-}
-
-.body-bars {
-  padding: 90px;
-  width: 85%;
-  margin: 0 7.5%;
-  width: calc(100% - 60px);
-  margin: 0 30px;
-}
-
-.row {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 5%;
-}
-
-.col {
-  flex-shrink: 0;
-  flex-basis: 0;
-}
-
-.col-1 {
-  flex-shrink: 0;
-  flex-basis: auto;
-  width: 8.3333333%;
-}
-
-.col-2 {
-  flex-shrink: 0;
-  flex-basis: auto;
-  width: 16.6666667%;
-}
-
-.col-3 {
-  flex-shrink: 0;
-  flex-basis: auto;
-  width: 25%;
-}
-
-.col-4 {
-  flex-shrink: 0;
-  flex-basis: auto;
-  width: 33.3333333%;
-}
-
-.col-5 {
-  flex-shrink: 0;
-  flex-basis: auto;
-  width: 41.6666667%;
-}
-
-.col-6 {
-  flex-shrink: 0;
-  flex-basis: auto;
-  width: 50%;
-}
-
-.col-7 {
-  flex-shrink: 0;
-  flex-basis: auto;
-  width: 58.3333333%;
-}
-
-.col-8 {
-  flex-shrink: 0;
-  flex-basis: auto;
-  width: 66.6666667%;
-}
-
-.col-9 {
-  flex-shrink: 0;
-  flex-basis: auto;
-  width: 75%;
-}
-
-.col-10 {
-  flex-shrink: 0;
-  flex-basis: auto;
-  width: 83.3333333%;
-}
-
-.col-11 {
-  flex-shrink: 0;
-  flex-basis: auto;
-  width: 91.6666667%;
-}
-
-.col-12 {
-  flex-shrink: 0;
-  flex-basis: auto;
-  width: 100%;
-}
-
-.col-auto {
-  width: auto;
-}
-
 .container, .container-fluid, .container-sm, .container-md, .container-lg, .container-xl, .container-xxl {
   width: 100%;
   padding-right: 15px;
@@ -1223,21 +1111,115 @@ body {
   color: white;
 }
 
-.card {
+main {
+  padding: 1%;
   display: flex;
   flex-direction: column;
-  min-width: 0;
-  word-wrap: break-word;
-  background-color: white;
-  border: 1px solid hsla(0, 0%, 0%, 0.12);
-  border-radius: 0.2rem;
+}
+main .button-test {
+  display: grid;
+  place-items: center;
+}
+main .introduction, main .colorized-buttons {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+}
+main .introduction .button-test, main .colorized-buttons .button-test {
+  display: grid;
+  place-items: center;
+}
+main .introduction button, main .colorized-buttons button {
+  display: grid;
+  place-items: center;
+  width: 30%;
+}
+main .introduction button:hover, main .colorized-buttons button:hover {
+  border: 1px black solid;
+}
+main .introduction ul, main .introduction ol, main .colorized-buttons ul, main .colorized-buttons ol {
+  display: grid;
+  place-items: center;
+}
+main .introduction ul li, main .introduction ol li, main .colorized-buttons ul li, main .colorized-buttons ol li {
+  display: grid;
+  place-items: center;
+  margin-top: 1%;
+}
+main .introduction .button-test, main .colorized-buttons .button-test {
+  display: grid;
+  place-items: center;
+  margin-top: 5%;
+  width: 25%;
+}
+main .introduction .button-test button, main .colorized-buttons .button-test button {
+  width: 100%;
+  font-size: 20px;
+}
+main .introduction .rounded-buttons ul li, main .colorized-buttons .rounded-buttons ul li {
+  display: grid;
+  place-items: center;
+  margin-top: 1%;
 }
 
-.card-body {
-  flex-grow: 1;
-  flex-shrink: 1;
-  flex-basis: auto;
-  padding: 1rem;
+.main {
+  padding: 1%;
+}
+.main .introduction {
+  display: grid;
+}
+.main .text-size, .main .text-width, .main .text-colours, .main .text-types {
+  margin: 5% 1%;
+}
+.main .text-size ul li {
+  margin-top: 1%;
+}
+.main .text-colours ul {
+  display: grid;
+  place-items: center;
+}
+.main .text-colours ul li {
+  display: grid;
+  place-items: center;
+  margin: 1%;
+}
+.main .text-types ul li {
+  padding-top: 1%;
+}
+.main .text-types ul li p {
+  display: grid;
+  place-items: center;
+  margin: 1%;
+}
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+}
+
+.main {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  width: 80vw;
+  height: 80vh;
+}
+
+.body-mar {
+  padding: 90px;
+  margin-left: 250px;
+}
+
+.body-bars {
+  padding: 90px;
+  width: 85%;
+  margin: 0 7.5%;
+  width: calc(100% - 60px);
+  margin: 0 30px;
 }
 
 .header {

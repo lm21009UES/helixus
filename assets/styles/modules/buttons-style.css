@@ -1,0 +1,78 @@
+.container, .container-fluid, .container-sm, .container-md, .container-lg, .container-xl, .container-xxl {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (min-width: 576px) {
+  .container, .container-sm {
+    max-width: 556px;
+  }
+}
+@media (min-width: 768px) {
+  .container, .container-sm, .container-md {
+    max-width: 740px;
+  }
+}
+@media (min-width: 992px) {
+  .container, .container-sm, .container-md, .container-lg {
+    max-width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .container, .container-sm, .container-md, .container-lg, .container-xl {
+    max-width: 1180px;
+  }
+}
+@media (min-width: 1400px) {
+  .container, .container-sm, .container-md, .container-lg, .container-xl, .container-xxl {
+    min-width: 1380px;
+  }
+}
+.btn, .btn-outline-orange, .btn-outline-green, .btn-outline-blue {
+  display: inline-block;
+  text-align: center;
+  cursor: pointer;
+  border: 1px solid transparent;
+  border-radius: 0.25rem;
+  padding: 0.5rem;
+  font-size: 120%;
+}
+
+.btn-outline-blue {
+  color: blue;
+  border-color: blue;
+}
+
+.btn-outline-blue:hover {
+  background-color: blue;
+  color: white;
+}
+
+.btn-outline-green {
+  color: green;
+  border-color: green;
+}
+
+.btn-outline-green:hover {
+  background-color: green;
+  color: white;
+}
+
+.btn-outline-orange {
+  color: orange;
+  border-color: orange;
+}
+
+.btn-outline-orange:hover {
+  background-color: orange;
+  color: white;
+}
+
+main {
+  padding: 5%;
+}
+
+/*# sourceMappingURL=buttons-style.css.map */
