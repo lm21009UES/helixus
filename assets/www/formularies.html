@@ -355,26 +355,72 @@
                 </article>
             </article>
             <article class="send-files">
-                <h2>
-                    Envío de documentos: <span class="underline-text-format">
+                <article class="example">
+                    <h2>
+                        Envío de documentos: <span class="underline-text-format">
                     send-files-form
                 </span>
-                </h2>
-                <form class="send-files-form">
-                    <label for="sender-name">Nombre completo del emisor: </label>
-                    <input type="text" id="sender-name" required>
+                    </h2>
+                    <form class="send-files-form">
+                        <label for="sender-name">Nombre completo del emisor: </label>
+                        <input type="text" id="sender-name" required>
 
-                    <label for="email">Correo electrónico destino: </label>
-                    <input type="email" id="email" required>
+                        <label for="email">Correo electrónico destino: </label>
+                        <input type="email" id="email" required>
 
-                    <label for="file-to-send">Documento a enviar: </label>
-                    <input type="file" id="file-to-send" accept="*/*" required style="display: block">
+                        <label for="file-to-send">Documento a enviar: </label>
+                        <input type="file" id="file-to-send" accept="*/*" required style="display: block">
 
-                    <label for="message">Mensaje: </label>
-                    <textarea id="message" required></textarea>
+                        <label for="message">Mensaje: </label>
+                        <textarea id="message" required></textarea>
 
-                    <button type="submit">Enviar</button>
-                </form>
+                        <button type="submit">Enviar</button>
+                    </form>
+                </article>
+                <article class="code">
+                    <p class="set-green-font-colour">.send-files{</p>
+                    <p class="middle set-lightblue-font-colour">display: flex;</p>
+                    <p class="middle set-lightblue-font-colour">flex-direction: column;</p>
+                    <p class="middle set-lightblue-font-colour">align-items: center;</p>
+                    <p class="middle set-lightblue-font-colour">margin: 3%;</p>
+                        <br>
+                    <p class="middle set-lightblue-font-colour">h2 {</p>
+                    <p class="more-internal set-yellow-font-colour">padding-bottom: 1%;</p>
+                    <p class="more-internal set-yellow-font-colour">width: 45%;</p>
+                    <p class="middle set-lightblue-font-colour">}</p>
+                        <br>
+                    <p class="middle set-lightblue-font-colour">form {</p>
+                    <p class="more-internal set-yellow-font-colour">background: #A75D5D;</p>
+                    <p class="more-internal set-yellow-font-colour">padding: 5%;</p>
+                    <p class="more-internal set-yellow-font-colour">width: 35%;</p>
+                    <p class="more-internal set-yellow-font-colour">display: flex;</p>
+                    <p class="more-internal set-yellow-font-colour">justify-content: center;</p>
+                    <p class="more-internal set-yellow-font-colour">flex-direction: column;</p>
+                    <p class="more-internal set-yellow-font-colour">grid-template-columns: repeat(2, 40%);</p>
+                            <br>
+                    <p class="more-internal set-yellow-font-colour">input {</p>
+                    <p class="xd set-red-font-colour">width: 100%;</p>
+                    <p class="xd set-red-font-colour">height: 35px;</p>
+                    <p class="xd set-red-font-colour">padding-top: 5%;</p>
+                    <p class="xd set-red-font-colour">display: flex;</p>
+                    <p class="xd set-red-font-colour">align-items: center;</p>
+                    <p class="more-internal set-yellow-font-colour">}</p>
+                        <br>
+                    <p class="more-internal set-yellow-font-colour">input[type="file"] {</p>
+                    <p class="xd set-red-font-colour">border-radius: 25px;</p>
+                    <p class="xd set-red-font-colour">padding: 0;</p>
+                    <p class="more-internal set-yellow-font-colour">}</p>
+                        <br>
+                    <p class="more-internal set-yellow-font-colour">button{</p>
+                    <p class="xd set-red-font-colour">margin-top: 5%;</p>
+                    <p class="xd set-red-font-colour">width: 25%;</p>
+                    <p class="xd set-red-font-colour">border: 1px black solid;</p>
+                    <p class="xd set-red-font-colour">border-radius: 25px;</p>
+                    <p class="more-internal set-yellow-font-colour">}</p>
+                    <p class="middle set-lightblue-font-colour">}</p>
+                    <p class="set-green-font-colour">}</p>
+
+                </article>
             </article>
         </section>
     </main>
