@@ -8,6 +8,7 @@ var text_format = document.getElementById("text-format");
 var navbars = document.getElementById("navbars");
 var badges_shadows = document.getElementById("badges-shadows");
 var containers = document.getElementById("containers");
+var about_us = document.getElementById("about-us");
 var destiny = document.getElementById("content");
 
 // Agregamos un evento de clic a cada enlace
@@ -45,6 +46,10 @@ badges_shadows.addEventListener("click", function() {
 
 containers.addEventListener("click", function() {
     cargarContenido("assets/www/containers.html");
+});
+
+about_us.addEventListener("clik", function (){
+    cargarContenido("assets/www/about-us.html");
 });
 
 // Función para cargar el contenido de la página HTML y reemplazar el contenido del div
