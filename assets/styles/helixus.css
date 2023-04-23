@@ -726,7 +726,7 @@
   font-family: Inter;
 }
 
-.generic-style, .danger-alert, .error-alert, .successfully-alert, .warning-alert {
+.generic-style, .danger-alert .example, .error-alert .example, .successfully-alert .example, .warning-alert .example {
   display: inline-block;
   width: 30%;
   height: 50px;
@@ -748,31 +748,67 @@
 }
 
 .warning-alert {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.warning-alert .example {
   background-color: #5E81AC;
   font-family: Arial;
   font-size: 25px;
   color: #ECEFF4;
 }
+.warning-alert .code {
+  display: flex;
+  flex-direction: column;
+  background-color: transparent;
+}
 
 .successfully-alert {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.successfully-alert .example {
   background-color: #A3BE8C;
   color: #ECEFF4;
   font-family: Arial;
   font-size: 25px;
 }
+.successfully-alert .code {
+  display: flex;
+  flex-direction: column;
+  background-color: transparent;
+}
 
 .error-alert {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.error-alert .example {
   background-color: #EBCB8B;
   color: #2E3440;
   font-family: Arial;
   font-size: 25px;
 }
+.error-alert .code {
+  display: flex;
+  flex-direction: column;
+  background-color: transparent;
+}
 
 .danger-alert {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.danger-alert .example {
   background-color: #BF616A;
   color: #ECEFF4;
   font-family: Arial;
   font-size: 25px;
+}
+.danger-alert .code {
+  display: flex;
+  flex-direction: column;
+  background-color: transparent;
 }
 
 .btn, .btn-outline-orange, .btn-outline-green, .btn-outline-blue {

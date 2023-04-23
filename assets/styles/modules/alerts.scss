@@ -26,34 +26,82 @@
 }
 
 .warning-alert{
-  @extend .generic-style;
-  background-color: $blue-color;
-  font-family: $font-1;
-  font-size: $size-3;
-  color: $white-colour;
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+  .example{
+    @extend .generic-style;
+    background-color: $blue-color;
+    font-family: $font-1;
+    font-size: $size-3;
+    color: $white-colour;
+  }
+
+  .code{
+    display: flex;
+    flex-direction: column;
+    background-color: transparent;
+  }
+
 }
 
 .successfully-alert{
-  @extend .generic-style;
-  background-color: $green-colour;
-  color: $white-colour;
-  font-family: $font-1;
-  font-size: $size-3;
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+  .example{@extend .generic-style;
+    background-color: $green-colour;
+    color: $white-colour;
+    font-family: $font-1;
+    font-size: $size-3;
+  }
+
+  .code{
+    display: flex;
+    flex-direction: column;
+    background-color: transparent;
+  }
 }
 
 .error-alert{
-  @extend .generic-style;
-  background-color: $yellow-colour;
-  color: $black-colour;
-  font-family: $font-1;
-  font-size: $size-3;
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+  .example{
+    @extend .generic-style;
+    background-color: $yellow-colour;
+    color: $black-colour;
+    font-family: $font-1;
+    font-size: $size-3;
+  }
+
+  .code{
+    display: flex;
+    flex-direction: column;
+    background-color: transparent;
+  }
 }
 
 .danger-alert{
-  @extend .generic-style;
-  background-color: $red-colour;
-  color: $white-colour;
-  font-family: $font-1;
-  font-size: $size-3;
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+  .example{
+    @extend .generic-style;
+    background-color: $red-colour;
+    color: $white-colour;
+    font-family: $font-1;
+    font-size: $size-3;
+  }
+
+  .code{
+    display: flex;
+    flex-direction: column;
+    background-color: transparent;
+  }
 }
 
