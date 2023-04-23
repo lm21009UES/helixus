@@ -1483,38 +1483,36 @@ input, textarea {
   align-items: center;
   margin: 3%;
 }
-.register-input h2 {
+.register-input .example h2 {
   padding-bottom: 1%;
-  width: 45%;
 }
-.register-input form {
+.register-input .example form {
   background: linear-gradient(90deg, #77ff80, rgba(46, 206, 183, 0.95));
   padding: 5%;
-  width: 35%;
   display: flex;
   flex-direction: column;
   grid-template-columns: repeat(2, 40%);
 }
-.register-input form input {
+.register-input .example form input {
   width: 100%;
   height: 35px;
   margin-top: 5%;
   display: flex;
   align-items: center;
 }
-.register-input form .get-sender-data {
+.register-input .example form .get-sender-data {
   display: grid;
   gap: 10%;
 }
-.register-input form .get-sex {
+.register-input .example form .get-sex {
   display: flex;
   flex-direction: row;
 }
-.register-input form .get-sex label {
+.register-input .example form .get-sex label {
   padding-top: 10%;
   padding-left: 1%;
 }
-.register-input form .get-sex .male, .register-input form .get-sex .female {
+.register-input .example form .get-sex .male, .register-input .example form .get-sex .female {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -1522,21 +1520,26 @@ input, textarea {
   padding-right: 15%;
   padding-top: 5%;
 }
-.register-input form .get-sex .male input[type=radio], .register-input form .get-sex .female input[type=radio] {
+.register-input .example form .get-sex .male input[type=radio], .register-input .example form .get-sex .female input[type=radio] {
   transform: scale(1.25);
 }
-.register-input form .get-sex .male span, .register-input form .get-sex .female span {
+.register-input .example form .get-sex .male span, .register-input .example form .get-sex .female span {
   padding-left: 5%;
 }
-.register-input form .finish {
+.register-input .example form .finish {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 5%;
 }
-.register-input form .finish .submit, .register-input form .finish .cancel {
+.register-input .example form .finish .submit, .register-input .example form .finish .cancel {
   height: 35px;
   border: 1px solid black;
   border-radius: 25px;
+}
+.register-input .code {
+  display: flex;
+  flex-direction: column;
+  background-color: transparent;
 }
 
 .send-files {
