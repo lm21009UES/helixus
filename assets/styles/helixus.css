@@ -1649,8 +1649,8 @@ main .introduction .intro {
 }
 main .introduction .button-test {
   display: grid;
-  width: 100%;
   grid-template-columns: repeat(2, 1fr);
+  width: 100%;
 }
 main .introduction .button-test .button-art {
   grid-column: 1;
@@ -1664,6 +1664,39 @@ main .introduction .button-test .code {
   grid-column: 2;
   padding: 5%;
 }
+main .colorized-buttons {
+  display: grid;
+}
+main .colorized-buttons .intro {
+  grid-column: 1;
+}
+main .colorized-buttons .font-colour-classes, main .colorized-buttons .back-colour-classes {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 100%;
+}
+main .colorized-buttons .font-colour-classes .classes, main .colorized-buttons .back-colour-classes .classes {
+  grid-column: 1;
+  display: grid;
+  grid-template-rows: repeat(7, 1fr);
+  height: 100%;
+}
+main .colorized-buttons .font-colour-classes .code, main .colorized-buttons .back-colour-classes .code {
+  background-color: transparent;
+  width: 100%;
+  grid-column: 2;
+  padding-bottom: 5%;
+  display: grid;
+  grid-template-rows: repeat(7, 1fr);
+  height: 100%;
+}
+main .colorized-buttons .font-colour-classes .colours p, main .colorized-buttons .back-colour-classes .colours p {
+  padding: 5%;
+}
+main .colorized-buttons ul {
+  padding-top: 5%;
+}
+
 .main {
   padding: 1%;
 }
