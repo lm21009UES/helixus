@@ -1,0 +1,124 @@
+.nav {
+  background-color: black;
+  --img1: scale(1);
+  --img2: scale(0);
+  width: 100%;
+}
+
+.nav:has(.dropdown:target) {
+  --img1: scale(0);
+  --img2: scale(1);
+  --clip: inset(0 0 0 0);
+}
+
+.nav_container {
+  width: 100%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 10% auto 10%;
+  grid-template-areas: "title boton img";
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.nav_title {
+  grid-area: title;
+  display: flex;
+  justify-content: center;
+}
+
+.nav_title img {
+  width: 75px;
+  margin: 0px;
+  padding: 0;
+}
+
+.nav_menu {
+  grid-area: img;
+  position: relative;
+  left: 60%;
+  z-index: 10;
+  transform: var(--img1);
+}
+
+.nav_menu--second {
+  transform: var(--img2);
+}
+
+.nav_boton {
+  grid-area: boton;
+  display: flex;
+  flex-wrap: wrap;
+  color: white;
+  font-size: 20px;
+  justify-content: center;
+  text-decoration: none;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.nav_boton a {
+  margin: 0 30px;
+  padding: 10px;
+}
+
+.nav_boton a:hover {
+  background-color: rgb(15, 53, 43);
+  border-radius: 10%;
+}
+
+.nav_icon {
+  width: 30px;
+  display: block;
+}
+
+.dropdown {
+  position: absolute;
+  background-color: rgb(48, 48, 53);
+  width: 300px;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  padding: 1em;
+  display: grid;
+  align-content: center;
+  justify-content: center;
+  gap: 1rem;
+  clip-path: var(--clip, inset(0 0 100% 100%));
+  transition: clip-path 0.5s;
+  text-align: center;
+}
+
+.dropdown_list {
+  list-style: none;
+  border-bottom: 1px solid white;
+  padding-bottom: 15px;
+}
+
+.dropdown_link {
+  color: white;
+  padding: 1em 0.7em;
+  text-decoration: none;
+}
+
+.dropdown_link:hover {
+  background-color: rgb(76, 100, 100);
+  border-radius: 10px;
+}
+
+@media (max-width: 1000px) {
+  .nav_container {
+    grid-template-columns: 10% auto 10%;
+  }
+}
+@media (max-width: 700px) {
+  .nav_boton {
+    display: none;
+  }
+  .nav_menu {
+    left: 40%;
+  }
+}
+
+/*# sourceMappingURL=navbars.css.map */
