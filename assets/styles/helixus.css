@@ -1867,13 +1867,24 @@ body {
   color: white;
 }
 
-.card {
+.card, .card-shadow {
   position: relative;
   display: flex;
   flex-direction: column;
   background-color: #ffffff;
   border: 1px solid rgba(0, 0, 0, 0.125);
   border-radius: 0.25rem;
+}
+
+.card-shadow {
+  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.2);
+  transition: all 400ms ease;
+  cursor: default;
+}
+
+.card-shadow:hover {
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+  transform: translateY(3%);
 }
 
 .card-body {
