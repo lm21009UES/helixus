@@ -5,12 +5,13 @@
 .generic-style{
   //Usamos inline-block para ajustar automáticamente al tamaño del texto
   display: inline-block;
+  width: 30%;
   height: 50px;
   padding: 10px;
   border: 1px black solid;
   border-radius: 10px;
   box-sizing: border-box;
-  margin: 5%;
+  margin: 1%;
 }
 
 .column{

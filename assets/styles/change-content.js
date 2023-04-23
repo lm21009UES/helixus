@@ -3,7 +3,8 @@ var home = document.getElementById("home");
 var buttons = document.getElementById("buttons");
 var forms = document.getElementById("formularies");
 var cards = document.getElementById("cards");
-var alerts = document.getElementById("alerts");
+var alerts = document.getElementById("alerts")
+var text_format = document.getElementById("text-format");
 var navbars = document.getElementById("navbars");
 var badges_shadows = document.getElementById("badges-shadows");
 var containers = document.getElementById("containers");
@@ -28,6 +29,10 @@ cards.addEventListener("click", function() {
 
 alerts.addEventListener("click", function() {
     cargarContenido("./assets/www/alerts.html");
+});
+
+text_format.addEventListener("click", function() {
+    cargarContenido("./assets/www/text-format.html");
 });
 
 navbars.addEventListener("click", function() {
