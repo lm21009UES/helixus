@@ -811,6 +811,12 @@
   background-color: transparent;
 }
 
+.generic_style .code {
+  display: flex;
+  flex-direction: column;
+  background-color: transparent;
+}
+
 .btn, .btn-outline-orange, .btn-outline-green, .btn-outline-blue {
   display: inline-block;
   text-align: center;
