@@ -121,6 +121,16 @@
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+.nav_container2 {
+  grid-template-areas: "boton img";
+  grid-template-columns: auto 10%;
+}
+
+.nav_container3 {
+  grid-template-columns: 100%;
+  grid-template-areas: "boton";
+}
+
 .nav_title {
   grid-area: title;
   display: flex;
@@ -1889,76 +1899,17 @@ body {
   padding: 1rem;
 }
 
-.header {
-  background-color: #5E81AC;
-  height: 80px;
-  position: fixed;
-  width: 100%;
-  top: 0;
-  left: 0;
-  padding: 0;
-  margin: 0;
-}
-
-.nav {
-  display: flex;
-  justify-content: center;
-  max-width: 992px;
-  margin: 0 auto;
-}
-
-.nav-link {
-  color: #ECEFF4;
-  text-decoration: none;
-}
-
-.logo {
-  font-size: 30px;
-  font-weight: bold;
-  padding: 0 40px;
-  line-height: 60px;
-}
-
-nav .logo img {
-  width: 60px;
-  height: 70px;
-  padding-top: 10px;
-}
-
-.nav-menu {
-  display: flex;
-  margin-right: 40px;
-  list-style: none;
-}
-
-.nav-menu-item {
-  font-size: 18px;
-  margin: 0 10px;
-  line-height: 80px;
-  text-transform: uppercase;
-  width: max-content;
-}
-
-.nav-menu-link {
-  padding: 8px 12px;
-  border-radius: 3px;
-}
-
-.nav-menu-link:hover {
-  background-color: #034574;
-  transition: 0.5s;
-}
-
-img {
-  width: 40px;
-  height: auto;
-}
-
-.nav-toggle {
-  border: none;
-  align-self: center;
-  display: none;
-  cursor: pointer;
+.badge, .badge-icono {
+  display: inline-block;
+  padding: 0.3rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  line-height: 1;
+  color: white;
+  vertical-align: baseline;
+  text-align: center;
+  white-space: nowrap;
+  border-radius: 0.15rem;
 }
 
 .badge-icono {

@@ -23,6 +23,16 @@
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+.nav_container2 {
+  grid-template-areas: "boton img";
+  grid-template-columns: auto 10%;
+}
+
+.nav_container3 {
+  grid-template-columns: 100%;
+  grid-template-areas: "boton";
+}
+
 .nav_title {
   grid-area: title;
   display: flex;
