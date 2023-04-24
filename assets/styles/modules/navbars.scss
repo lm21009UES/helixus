@@ -59,6 +59,12 @@
     transform: var(--img1);
 }
 
+.nav-menu-2{
+    grid-area: img;
+    position: static;
+    left: 60%;
+}
+
 .nav_menu--second{
     transform: var(--img2);
 }

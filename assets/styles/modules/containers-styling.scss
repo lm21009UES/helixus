@@ -7,11 +7,11 @@
   margin-top: 1%;
 
   .middle{
-    margin-left: 3%;
+    margin-left: 0%;
   }
 
   .internal{
-    margin-left: 5%;
+    margin-left: 0%;
   }
 }
 
@@ -24,7 +24,7 @@ main{
   }
 
   p{
-    margin-left: 1%;
+    margin-left: 0;
   }
 
   .default-container{
@@ -38,11 +38,11 @@ main{
 
   .responsive-container-modes{
     display: grid;
-    place-items: center;
+    place-items:initial;
 
     .small-responsive{
       margin-top: 3%;
-      width: 576px;
+      width: 90%;
       background-color: #2E3440;
       border: 1px black solid;
     }
