@@ -26,6 +26,10 @@ $width-collapsed: 50px;
 
 body{
     width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
 }
 
 .code {
@@ -62,6 +66,7 @@ body{
     width: 90vw;
     margin: 0 5vw;
     height: 80vh;
+
 }
 
 .row{
