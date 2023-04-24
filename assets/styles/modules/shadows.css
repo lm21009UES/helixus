@@ -17,7 +17,7 @@
 }
 
 .shadow-medium {
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .shadow-larges {
