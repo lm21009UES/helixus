@@ -1662,7 +1662,6 @@ input, textarea {
 }
 
 main {
-  padding: 1%;
   display: flex;
   flex-direction: column;
 }
@@ -2031,6 +2030,10 @@ main .responsive-container-modes .xtra-xtra-large-responsive {
 
 body {
   width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
 }
 
 .code {
