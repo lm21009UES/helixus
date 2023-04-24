@@ -728,7 +728,7 @@
 
 .generic-style, .danger-alert .example, .error-alert .example, .successfully-alert .example, .warning-alert .example {
   display: inline-block;
-  width: 30%;
+  width: 205px;
   height: 50px;
   padding: 10px;
   border: 1px black solid;
