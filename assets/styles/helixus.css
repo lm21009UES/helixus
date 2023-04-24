@@ -1793,8 +1793,22 @@ main .rounded-buttons .code {
 .main .introduction {
   display: grid;
 }
-.main .text-size, .main .text-width, .main .text-colours, .main .text-types {
-  margin: 5% 1%;
+.main .text-size, .main .text-colours, .main .text-types {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 1% 1%;
+}
+.main .text-size .code, .main .text-colours .code, .main .text-types .code {
+  display: flex;
+  flex-direction: column;
+  background-color: transparent;
+  margin-left: 35%;
+}
+.main .text-size .sizes, .main .text-colours .sizes, .main .text-types .sizes {
+  margin-left: 35%;
+}
+.main .text-size .styles, .main .text-colours .styles, .main .text-types .styles {
+  margin-left: 35%;
 }
 .main .text-size ul li {
   margin-top: 1%;
@@ -1807,6 +1821,7 @@ main .rounded-buttons .code {
   display: grid;
   place-items: center;
   margin: 1%;
+  width: 100%;
 }
 .main .text-types ul li {
   padding-top: 1%;

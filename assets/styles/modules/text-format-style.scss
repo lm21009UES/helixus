@@ -7,8 +7,25 @@
     display: grid;
   }
 
-  .text-size, .text-width, .text-colours, .text-types{
-    margin: 5% 1%;
+  .text-size, .text-colours, .text-types{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 1% 1%;
+
+    .code{
+      display: flex;
+      flex-direction: column;
+      background-color: transparent;
+      margin-left: 35%;
+    }
+
+    .sizes{
+      margin-left: 35%;
+    }
+
+    .styles{
+      margin-left: 35%;
+    }
   }
 
   .text-size{
@@ -28,6 +45,7 @@
         display: grid;
         place-items: center;
         margin: 1%;
+        width: 100%;
       }
     }
   }
