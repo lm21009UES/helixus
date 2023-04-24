@@ -2173,6 +2173,7 @@ body {
 
 .container, .container-fluid, .container-sm, .container-md, .container-lg, .container-xl, .container-xxl {
   width: 100%;
+  height: auto;
   padding-right: 15px;
   padding-left: 15px;
   margin-right: auto;
