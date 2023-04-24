@@ -1683,15 +1683,6 @@ main .introduction button, main .colorized-buttons button {
 main .introduction button:hover, main .colorized-buttons button:hover {
   border: 1px black solid;
 }
-main .introduction ul, main .introduction ol, main .colorized-buttons ul, main .colorized-buttons ol {
-  display: grid;
-  place-items: center;
-}
-main .introduction ul li, main .introduction ol li, main .colorized-buttons ul li, main .colorized-buttons ol li {
-  display: grid;
-  place-items: center;
-  margin-top: 1%;
-}
 main .introduction .button-test, main .colorized-buttons .button-test {
   display: grid;
   place-items: center;
@@ -1745,17 +1736,17 @@ main .colorized-buttons .font-colour-classes, main .colorized-buttons .back-colo
 }
 main .colorized-buttons .font-colour-classes .classes, main .colorized-buttons .back-colour-classes .classes {
   grid-column: 1;
-  display: grid;
-  grid-template-rows: repeat(7, 1fr);
-  height: 100%;
+}
+main .colorized-buttons .font-colour-classes .classes p, main .colorized-buttons .back-colour-classes .classes p {
+  padding-bottom: 5%;
 }
 main .colorized-buttons .font-colour-classes .code, main .colorized-buttons .back-colour-classes .code {
   background-color: transparent;
-  width: 100%;
   grid-column: 2;
-  padding-bottom: 5%;
-  display: grid;
   grid-template-rows: repeat(7, 1fr);
+}
+main .colorized-buttons .font-colour-classes .code img, main .colorized-buttons .back-colour-classes .code img {
+  width: 100%;
   height: 100%;
 }
 main .colorized-buttons .font-colour-classes .blue, main .colorized-buttons .font-colour-classes .yellow, main .colorized-buttons .font-colour-classes .green, main .colorized-buttons .font-colour-classes .lightblue, main .colorized-buttons .font-colour-classes .black, main .colorized-buttons .font-colour-classes .red, main .colorized-buttons .font-colour-classes .white, main .colorized-buttons .back-colour-classes .blue, main .colorized-buttons .back-colour-classes .yellow, main .colorized-buttons .back-colour-classes .green, main .colorized-buttons .back-colour-classes .lightblue, main .colorized-buttons .back-colour-classes .black, main .colorized-buttons .back-colour-classes .red, main .colorized-buttons .back-colour-classes .white {
@@ -1763,9 +1754,6 @@ main .colorized-buttons .font-colour-classes .blue, main .colorized-buttons .fon
 }
 main .colorized-buttons .font-colour-classes .colours, main .colorized-buttons .back-colour-classes .colours {
   height: 100%;
-}
-main .colorized-buttons .font-colour-classes .colours p, main .colorized-buttons .back-colour-classes .colours p {
-  margin: 5%;
 }
 main .rounded-buttons {
   display: grid;
