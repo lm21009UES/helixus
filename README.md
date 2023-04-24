@@ -13,7 +13,7 @@
   -Ángel Gabriel Vásquez Crespo (VC21007) <br>
 
 # Versión (actual): 
-v0.0.1
+v1.0.0
 
 # Aplicaciones: 
 Web con documentación sobre la biblioteca en cuestión
