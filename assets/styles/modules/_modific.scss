@@ -11,10 +11,10 @@
         border-radius: 30%;
     }
     &-4{
-        border-radius: 40px;
+        border-radius: 40%;
     }
     &-5{
-        border-radius: 50px;
+        border-radius: 50%;
     }
 }
 
@@ -107,4 +107,61 @@
             }
         }
     }
+}
+
+.centrar{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+}
+.text-center{
+    text-align: center;
+}
+
+.text-justific{
+    text-align: justify;
+}
+
+.interlineado{
+    line-height: 35px;
+}
+
+.text-principal{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.fondo-degradado{
+    &-1{
+        background: #114357;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #F29492, #114357);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #F29492, #114357); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    }
+    &-2{
+        background: #4DA0B0;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #D39D38, #4DA0B0);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #D39D38, #4DA0B0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    }
+    &-3{
+        background: #eacda3;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #d6ae7b, #eacda3);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #d6ae7b, #eacda3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    }
+    &-4{
+        background: #403A3E;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #BE5869, #403A3E);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #BE5869, #403A3E); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    }
+}
+.main-2{
+    padding-top: 0px;
+    display: flex;
+    width: 90vw;
+    height: 80vh;
+}
+.main-3{
+    padding: 0;
+    display: flex;
+    width: 90vw;
 }

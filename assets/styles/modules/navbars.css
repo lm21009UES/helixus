@@ -1,11 +1,17 @@
-.nav {
+.nav, .nav-image-space {
   background-color: black;
   --img1: scale(1);
   --img2: scale(0);
   width: 100%;
+  position: fixed;
+  margin-bottom: 2px;
 }
 
-.nav:has(.dropdown:target) {
+.nav-image-space {
+  position: static;
+}
+
+.nav:has(.dropdown:target), .nav-image-space:has(.dropdown:target) {
   --img1: scale(0);
   --img2: scale(1);
   --clip: inset(0 0 0 0);
@@ -53,6 +59,12 @@
   transform: var(--img1);
 }
 
+.nav-menu-2 {
+  grid-area: img;
+  position: static;
+  left: 60%;
+}
+
 .nav_menu--second {
   transform: var(--img2);
 }
@@ -84,7 +96,7 @@
 }
 
 .dropdown {
-  position: absolute;
+  position: fixed;
   background-color: rgb(48, 48, 53);
   width: 300px;
   right: 0;
