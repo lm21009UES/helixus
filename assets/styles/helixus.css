@@ -96,14 +96,20 @@
   top: 95vh;
 }
 
-.nav {
+.nav, .nav-image-space {
   background-color: black;
   --img1: scale(1);
   --img2: scale(0);
   width: 100%;
+  position: fixed;
+  margin-bottom: 2px;
 }
 
-.nav:has(.dropdown:target) {
+.nav-image-space {
+  position: static;
+}
+
+.nav:has(.dropdown:target), .nav-image-space:has(.dropdown:target) {
   --img1: scale(0);
   --img2: scale(1);
   --clip: inset(0 0 0 0);
@@ -182,7 +188,7 @@
 }
 
 .dropdown {
-  position: absolute;
+  position: fixed;
   background-color: rgb(48, 48, 53);
   width: 300px;
   right: 0;
@@ -2058,12 +2064,10 @@ body {
 }
 
 .main {
-  margin: 0;
-  padding: 0;
+  padding-top: 100px;
   display: flex;
   width: 90vw;
-  margin-left: 5vw;
-  margin-right: 5vw;
+  margin: 0 5vw;
   height: 80vh;
 }
 

@@ -3,12 +3,18 @@
     --img1: scale(1);
     --img2: scale(0);
     width: 100%;
+    position: fixed;
+    margin-bottom: 2px;
+}
+
+.nav-image-space{
+    @extend .nav;
+    position: static;
 }
 
 .nav:has(.dropdown:target){
     --img1: scale(0);
     --img2: scale(1);
-
     --clip: inset(0 0 0 0);
 }
 
@@ -84,7 +90,7 @@
 }
 
 .dropdown{
-    position: absolute;
+    position: fixed;
     background-color: rgb(48, 48, 53);
     width: 300px;
     right: 0;
