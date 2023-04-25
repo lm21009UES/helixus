@@ -14,7 +14,7 @@
 .shadow-small{
     padding: $size-5;
     margin: $size-1;
-    background-color: white;
+    background-color: transparent;
     border-radius: 0.25rem;
     box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.07);
 }
@@ -26,5 +26,5 @@
 
 .shadow-larges{
     @extend .shadow-small;
-    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0);
 }

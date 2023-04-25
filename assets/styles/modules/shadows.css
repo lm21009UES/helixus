@@ -11,7 +11,7 @@
 .shadow-small, .shadow-larges, .shadow-medium {
   padding: 15px;
   margin: 35px;
-  background-color: white;
+  background-color: transparent;
   border-radius: 0.25rem;
   box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.07);
 }
@@ -21,7 +21,7 @@
 }
 
 .shadow-larges {
-  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0);
 }
 
 /*# sourceMappingURL=shadows.css.map */
