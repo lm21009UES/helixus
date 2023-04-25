@@ -8,6 +8,14 @@
     place-items: center;
 }
 
+.view-code-btn{
+    margin: 1% 50%;
+
+    button{
+        width: 150px;
+    }
+}
+
 .code-capture{
     display: flex;
     flex-direction: column;
