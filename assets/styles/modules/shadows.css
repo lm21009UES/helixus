@@ -21,7 +21,7 @@
 }
 
 .shadow-larges {
-  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0);
+  box-shadow: 5px 5px 20px rgb(0, 0, 0);
 }
 
 /*# sourceMappingURL=shadows.css.map */
