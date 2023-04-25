@@ -685,6 +685,10 @@
   font-family: Inter;
 }
 
+.set-font-5 {
+  font-family: "Impact";
+}
+
 .background-style, .set-red-background-colour, .set-yellow-background-colour, .set-green-background-colour, .set-blue-background-colour, .set-lightblue-background-colour, .set-white-background-colour, .set-black-background-colour {
   width: 15em;
   height: 2em;
@@ -793,6 +797,10 @@
 
 .set-font-4 {
   font-family: Inter;
+}
+
+.set-font-5 {
+  font-family: "Impact";
 }
 
 .generic-style, .danger-alert .example, .error-alert .example, .successfully-alert .example, .warning-alert .example {
@@ -1381,13 +1389,22 @@
   color: #2E3440;
 }
 
-.main {
+.flex-centre, main .rounded-buttons, main .colorized-buttons .colour-classes .back-02, main .colorized-buttons .colour-classes .back-01, main .colorized-buttons .colour-classes .fonts, main .colorized-buttons .colour-classes, .email-input-format .example form, .side-to-side-form .example form, .default-form .example form {
   display: flex;
   flex-direction: column;
+  place-items: center;
 }
 
-.title {
-  margin: 3%;
+.view-code-btn, main .rounded-buttons .classes, main .colorized-buttons .colour-classes .back-02, main .colorized-buttons .colour-classes .back-01, main .colorized-buttons .colour-classes .fonts {
+  margin: 1% 50%;
+}
+.view-code-btn button, main .rounded-buttons .classes button, main .colorized-buttons .colour-classes .back-02 button, main .colorized-buttons .colour-classes .back-01 button, main .colorized-buttons .colour-classes .fonts button {
+  width: 150px;
+}
+
+.code-capture, .email-input-format .code-capture, .email-input-format .default-form .code-capture, .default-form .email-input-format .code-capture, .email-input-format .side-to-side-form .code-capture, .side-to-side-form .email-input-format .code-capture, .default-form .email-input-format .side-to-side-form .code-capture, .email-input-format .side-to-side-form .default-form .code-capture, .default-form .side-to-side-form .email-input-format .code-capture, .side-to-side-form .email-input-format .default-form .code-capture, .email-input-format .default-form .side-to-side-form .code-capture, .side-to-side-form .default-form .email-input-format .code-capture, .side-to-side-form .default-form .side-to-side-form .email-input-format .code-capture, .email-input-format .side-to-side-form .default-form .side-to-side-form .code-capture, .side-to-side-form .email-input-format .default-form .side-to-side-form .code-capture, .side-to-side-form .default-form .email-input-format .side-to-side-form .code-capture, .default-form .side-to-side-form .default-form .email-input-format .code-capture, .email-input-format .default-form .side-to-side-form .default-form .code-capture, .default-form .email-input-format .side-to-side-form .default-form .code-capture, .default-form .side-to-side-form .email-input-format .default-form .code-capture, .email-input-format .default-form .email-input-format .code-capture, .default-form .email-input-format .default-form .code-capture, .email-input-format .side-to-side-form .email-input-format .code-capture, .side-to-side-form .email-input-format .side-to-side-form .code-capture, .side-to-side-form .code-capture, .side-to-side-form .email-input-format .code-capture, .email-input-format .side-to-side-form .code-capture, .side-to-side-form .email-input-format .default-form .code-capture, .email-input-format .default-form .side-to-side-form .code-capture, .side-to-side-form .default-form .email-input-format .code-capture, .default-form .email-input-format .side-to-side-form .code-capture, .email-input-format .side-to-side-form .code-capture, .side-to-side-form .email-input-format .code-capture, .default-form .email-input-format .side-to-side-form .code-capture, .email-input-format .side-to-side-form .default-form .code-capture, .default-form .side-to-side-form .email-input-format .code-capture, .side-to-side-form .email-input-format .default-form .code-capture, .email-input-format .default-form .side-to-side-form .code-capture, .side-to-side-form .default-form .email-input-format .code-capture, .side-to-side-form .default-form .side-to-side-form .email-input-format .code-capture, .email-input-format .side-to-side-form .default-form .side-to-side-form .code-capture, .side-to-side-form .email-input-format .default-form .side-to-side-form .code-capture, .side-to-side-form .default-form .email-input-format .side-to-side-form .code-capture, .default-form .side-to-side-form .default-form .email-input-format .code-capture, .email-input-format .default-form .side-to-side-form .default-form .code-capture, .default-form .email-input-format .side-to-side-form .default-form .code-capture, .default-form .side-to-side-form .email-input-format .default-form .code-capture, .side-to-side-form .email-input-format .default-form .email-input-format .code-capture, .email-input-format .default-form .email-input-format .side-to-side-form .code-capture, .side-to-side-form .default-form .email-input-format .default-form .code-capture, .default-form .email-input-format .default-form .side-to-side-form .code-capture, .email-input-format .side-to-side-form .email-input-format .code-capture, .side-to-side-form .email-input-format .side-to-side-form .code-capture, .side-to-side-form .default-form .code-capture, .side-to-side-form .default-form .email-input-format .code-capture, .email-input-format .side-to-side-form .default-form .code-capture, .side-to-side-form .email-input-format .default-form .code-capture, .email-input-format .side-to-side-form .default-form .code-capture, .side-to-side-form .default-form .email-input-format .code-capture, .email-input-format .side-to-side-form .default-form .code-capture, .side-to-side-form .default-form .email-input-format .code-capture, .side-to-side-form .email-input-format .default-form .code-capture, .side-to-side-form .default-form .email-input-format .side-to-side-form .code-capture, .email-input-format .side-to-side-form .default-form .code-capture, .side-to-side-form .default-form .side-to-side-form .email-input-format .code-capture, .side-to-side-form .email-input-format .default-form .code-capture, .side-to-side-form .email-input-format .default-form .side-to-side-form .code-capture, .email-input-format .side-to-side-form .default-form .side-to-side-form .code-capture, .side-to-side-form .default-form .email-input-format .code-capture, .side-to-side-form .default-form .side-to-side-form .email-input-format .code-capture, .email-input-format .side-to-side-form .default-form .side-to-side-form .code-capture, .side-to-side-form .email-input-format .default-form .side-to-side-form .code-capture, .side-to-side-form .default-form .email-input-format .side-to-side-form .code-capture, .default-form .side-to-side-form .default-form .email-input-format .code-capture, .email-input-format .default-form .side-to-side-form .default-form .code-capture, .default-form .email-input-format .side-to-side-form .default-form .code-capture, .default-form .side-to-side-form .email-input-format .default-form .code-capture, .side-to-side-form .email-input-format .default-form .email-input-format .code-capture, .email-input-format .side-to-side-form .default-form .email-input-format .code-capture, .side-to-side-form .default-form .email-input-format .default-form .code-capture, .email-input-format .side-to-side-form .default-form .email-input-format .code-capture, .email-input-format .side-to-side-form .email-input-format .default-form .code-capture, .side-to-side-form .default-form .email-input-format .side-to-side-form .code-capture, .side-to-side-form .email-input-format .side-to-side-form .default-form .code-capture, .default-form .side-to-side-form .code-capture, .default-form .side-to-side-form .email-input-format .code-capture, .email-input-format .default-form .side-to-side-form .code-capture, .email-input-format .default-form .side-to-side-form .code-capture, .default-form .side-to-side-form .email-input-format .code-capture, .default-form .email-input-format .side-to-side-form .code-capture, .default-form .email-input-format .side-to-side-form .code-capture, .email-input-format .default-form .side-to-side-form .code-capture, .default-form .side-to-side-form .email-input-format .code-capture, .default-form .email-input-format .side-to-side-form .code-capture, .default-form .email-input-format .side-to-side-form .default-form .code-capture, .email-input-format .default-form .side-to-side-form .default-form .code-capture, .default-form .side-to-side-form .email-input-format .code-capture, .default-form .side-to-side-form .email-input-format .default-form .code-capture, .email-input-format .default-form .side-to-side-form .code-capture, .default-form .side-to-side-form .default-form .email-input-format .code-capture, .side-to-side-form .default-form .side-to-side-form .email-input-format .code-capture, .email-input-format .side-to-side-form .default-form .side-to-side-form .code-capture, .side-to-side-form .email-input-format .default-form .side-to-side-form .code-capture, .side-to-side-form .default-form .email-input-format .side-to-side-form .code-capture, .default-form .side-to-side-form .default-form .email-input-format .code-capture, .email-input-format .default-form .side-to-side-form .default-form .code-capture, .default-form .email-input-format .side-to-side-form .default-form .code-capture, .default-form .side-to-side-form .email-input-format .default-form .code-capture, .email-input-format .default-form .side-to-side-form .email-input-format .code-capture, .email-input-format .default-form .email-input-format .side-to-side-form .code-capture, .default-form .side-to-side-form .email-input-format .default-form .code-capture, .default-form .email-input-format .default-form .side-to-side-form .code-capture, .default-form .email-input-format .side-to-side-form .email-input-format .code-capture, .email-input-format .default-form .side-to-side-form .email-input-format .code-capture, .default-form .side-to-side-form .email-input-format .side-to-side-form .code-capture, .default-form .code-capture, .default-form .email-input-format .code-capture, .email-input-format .default-form .code-capture, .email-input-format .default-form .code-capture, .default-form .email-input-format .code-capture, .default-form .email-input-format .side-to-side-form .code-capture, .email-input-format .side-to-side-form .default-form .code-capture, .default-form .side-to-side-form .email-input-format .code-capture, .side-to-side-form .email-input-format .default-form .code-capture, .default-form .email-input-format .side-to-side-form .code-capture, .email-input-format .side-to-side-form .default-form .code-capture, .default-form .side-to-side-form .email-input-format .code-capture, .side-to-side-form .email-input-format .default-form .code-capture, .email-input-format .default-form .side-to-side-form .code-capture, .side-to-side-form .default-form .email-input-format .code-capture, .side-to-side-form .default-form .side-to-side-form .email-input-format .code-capture, .email-input-format .side-to-side-form .default-form .side-to-side-form .code-capture, .side-to-side-form .email-input-format .default-form .side-to-side-form .code-capture, .side-to-side-form .default-form .email-input-format .side-to-side-form .code-capture, .default-form .side-to-side-form .default-form .email-input-format .code-capture, .email-input-format .default-form .side-to-side-form .default-form .code-capture, .default-form .email-input-format .side-to-side-form .default-form .code-capture, .default-form .side-to-side-form .email-input-format .default-form .code-capture, .email-input-format .default-form .email-input-format .code-capture, .default-form .email-input-format .default-form .code-capture, .default-form .email-input-format .side-to-side-form .email-input-format .code-capture, .email-input-format .side-to-side-form .email-input-format .default-form .code-capture, .default-form .side-to-side-form .email-input-format .side-to-side-form .code-capture, .side-to-side-form .email-input-format .side-to-side-form .default-form .code-capture {
+  display: flex;
+  flex-direction: column;
 }
 
 input, textarea {
@@ -1412,28 +1429,26 @@ input, textarea {
 
 .default-form {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 3%;
+  flex-direction: row;
+  place-items: center;
+  width: 100%;
+  gap: 33%;
+  padding: 0 15%;
 }
 .default-form .example h2 {
   padding-bottom: 1%;
 }
 .default-form .example form {
-  margin-left: 1%;
-  display: flex;
-  flex-direction: column;
-  place-items: center;
   background-color: #88C0D0;
-  height: 350px;
-  width: 100%;
+  height: 400px;
+  width: 150%;
 }
 .default-form .example form label {
   margin-top: 5%;
 }
 .default-form .example form article {
   display: grid;
-  gap: 5%;
+  gap: 1%;
   height: 100px;
 }
 .default-form .example form article .top-input {
@@ -1450,25 +1465,20 @@ input, textarea {
   background-color: #F5BDC8;
   border-radius: 25px;
 }
-.default-form .code {
-  display: flex;
-  flex-direction: column;
-  background-color: transparent;
-}
-
 .side-to-side-form {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-direction: row;
+  place-items: center;
+  width: 100%;
+  gap: 5%;
+  padding: 5% 15%;
 }
 .side-to-side-form .example h2 {
   padding-bottom: 1%;
 }
 .side-to-side-form .example form {
-  width: 85%;
+  width: 600px;
   height: 50%;
-  display: flex;
-  flex-direction: column;
   background-color: #BF616A;
 }
 .side-to-side-form .example form .get-data {
@@ -1480,8 +1490,7 @@ input, textarea {
   padding-left: 1%;
 }
 .side-to-side-form .example form .get-data .left-input, .side-to-side-form .example form .get-data .right-input {
-  padding-top: 1%;
-  padding-left: 3%;
+  width: 50%;
 }
 .side-to-side-form .example form .send-button {
   display: grid;
@@ -1492,17 +1501,14 @@ input, textarea {
   width: 100px;
   background-color: #88C0D0;
 }
-.side-to-side-form .code {
-  display: flex;
-  flex-direction: column;
-  background-color: transparent;
-}
-
 .email-input-format {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-direction: row;
+  place-items: center;
+  width: 100%;
+  padding: 5% 15%;
   margin: 3%;
+  gap: 15%;
 }
 .email-input-format .example h2 {
   padding-bottom: 1%;
@@ -1510,9 +1516,7 @@ input, textarea {
 .email-input-format .example form {
   background-color: #EBCB8B;
   padding: 5%;
-  display: flex;
-  flex-direction: column;
-  grid-template-columns: repeat(2, 40%);
+  width: 450px;
 }
 .email-input-format .example form input {
   width: 100%;
@@ -1540,27 +1544,26 @@ input, textarea {
   background-color: #98bb46;
   border-radius: 25px;
 }
-.email-input-format .code {
-  display: flex;
-  flex-direction: column;
-  background-color: transparent;
-}
-
 .register-input {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-direction: row;
+  place-items: center;
+  width: 100%;
+  padding: 5% 15%;
   margin: 3%;
+  gap: 5%;
 }
 .register-input .example h2 {
   padding-bottom: 1%;
 }
 .register-input .example form {
-  background: linear-gradient(90deg, #77ff80, rgba(46, 206, 183, 0.95));
-  padding: 5%;
   display: flex;
   flex-direction: column;
-  grid-template-columns: repeat(2, 40%);
+  align-items: center;
+  background: linear-gradient(90deg, #77ff80, rgba(46, 206, 183, 0.95));
+  padding: 5%;
+  width: 550px;
+  height: 500px;
 }
 .register-input .example form input {
   width: 100%;
@@ -1605,28 +1608,27 @@ input, textarea {
   border: 1px solid black;
   border-radius: 25px;
 }
-.register-input .code {
-  display: flex;
-  flex-direction: column;
-  background-color: transparent;
-}
 
 .send-files {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-direction: row;
+  place-items: center;
+  width: 100%;
+  padding: 5% 15%;
   margin: 3%;
+  gap: 12%;
 }
 .send-files h2 {
   padding-bottom: 1%;
 }
 .send-files .example form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   background: #A75D5D;
   padding: 5%;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  grid-template-columns: repeat(2, 40%);
+  width: 450px;
+  height: 350px;
 }
 .send-files .example form input {
   width: 100%;
@@ -1645,12 +1647,23 @@ input, textarea {
   border: 1px black solid;
   border-radius: 25px;
 }
-.send-files .code {
-  display: flex;
-  flex-direction: column;
-  background-color: transparent;
-}
 
+@media (max-width: 1200px) {
+  .default-form, .side-to-side-form, .email-input-format, .register-input, .send-files {
+    margin: 0;
+    padding: 0;
+  }
+}
+@media (max-width: 1000px) {
+  .default-form, .side-to-side-form, .email-input-format, .register-input, .send-files {
+    display: flex;
+    flex-direction: column;
+  }
+  .default-form .example form, .side-to-side-form .example form, .email-input-format .example form, .register-input .example form, .send-files .example form {
+    margin-top: 15%;
+    margin-bottom: 15%;
+  }
+}
 .container, .container-fluid, .container-sm, .container-md, .container-lg, .container-xl, .container-xxl {
   width: 100%;
   padding-right: 15px;
@@ -1724,7 +1737,7 @@ input, textarea {
   color: white;
 }
 
-.flex-centre, main .rounded-buttons, main .colorized-buttons .colour-classes .back-02, main .colorized-buttons .colour-classes .back-01, main .colorized-buttons .colour-classes .fonts, main .colorized-buttons .colour-classes {
+.flex-centre, main .rounded-buttons, main .colorized-buttons .colour-classes .back-02, main .colorized-buttons .colour-classes .back-01, main .colorized-buttons .colour-classes .fonts, main .colorized-buttons .colour-classes, .default-form .example form, .side-to-side-form .example form, .email-input-format .example form {
   display: flex;
   flex-direction: column;
   place-items: center;
@@ -1840,6 +1853,59 @@ main .rounded-buttons .classes button {
   margin-top: 1%;
 }
 
+@media (max-width: 1200px) {
+  main .introduction, main .colorized-buttons {
+    padding: 1%;
+    display: flex;
+    flex-direction: column;
+  }
+  main .introduction .button-test, main .colorized-buttons .button-test {
+    display: flex;
+    flex-direction: row;
+    place-items: center;
+  }
+  main .introduction {
+    display: flex;
+    flex-direction: column;
+  }
+  main .introduction .button-test {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  main .colorized-buttons {
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    margin-right: 0;
+  }
+  main .colorized-buttons .colour-classes .fonts .font-colour-classes {
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    width: 500px;
+  }
+  main .colorized-buttons .colour-classes .back-01 .back-colour-classes-01 {
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    width: 500px;
+  }
+  main .colorized-buttons .colour-classes .back-02 .back-colour-classes-02 {
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    width: 500px;
+  }
+  main .rounded-buttons {
+    width: 100%;
+  }
+  main .rounded-buttons .classes {
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+  }
+}
 .main {
   padding: 1%;
 }

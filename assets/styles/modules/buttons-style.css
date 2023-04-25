@@ -71,8 +71,120 @@
   color: white;
 }
 
+.flex-centre, main .rounded-buttons, main .colorized-buttons .colour-classes .back-02, main .colorized-buttons .colour-classes .back-01, main .colorized-buttons .colour-classes .fonts, main .colorized-buttons .colour-classes {
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+}
+
+.flex-centre-row, main .rounded-buttons .classes, main .colorized-buttons .colour-classes .back-02 .back-colour-classes-02, main .colorized-buttons .colour-classes .back-01 .back-colour-classes-01, main .colorized-buttons .colour-classes .fonts .font-colour-classes {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.view-code-btn button, main .rounded-buttons .classes button, main .colorized-buttons .colour-classes .back-02 button, main .colorized-buttons .colour-classes .back-01 button, main .colorized-buttons .colour-classes .fonts button {
+  width: 150px;
+}
+
 main {
+  display: flex;
+  flex-direction: column;
+}
+main .introduction, main .colorized-buttons {
+  padding: 1%;
+  display: flex;
+  flex-direction: column;
+}
+main .introduction .button-test, main .colorized-buttons .button-test {
+  display: flex;
+  flex-direction: row;
+  place-items: center;
+}
+main .introduction button, main .colorized-buttons button {
+  display: grid;
+  place-items: center;
+  width: 30%;
+}
+main .introduction button:hover, main .colorized-buttons button:hover {
+  border: 1px black solid;
+}
+main .introduction .button-test, main .colorized-buttons .button-test {
+  display: grid;
+  place-items: center;
+  margin-top: 5%;
+  width: 25%;
+}
+main .introduction .button-test button, main .colorized-buttons .button-test button {
+  width: 100%;
+  font-size: 20px;
+}
+main .introduction .rounded-buttons ul li, main .colorized-buttons .rounded-buttons ul li {
+  display: grid;
+  place-items: center;
+  margin-top: 1%;
+}
+main .introduction {
+  display: grid;
+}
+main .introduction .intro {
+  grid-column: 1;
+}
+main .introduction .button-test {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 100%;
+}
+main .introduction .button-test .button-art {
+  grid-column: 1;
+}
+main .introduction .button-test h2 {
+  padding-bottom: 5%;
+}
+main .introduction .button-test .code {
+  background-color: transparent;
+  width: 100%;
+  grid-column: 2;
   padding: 5%;
+}
+main .colorized-buttons {
+  display: flex;
+  flex-direction: column;
+}
+main .colorized-buttons h2 {
+  padding-top: 5%;
+}
+main .colorized-buttons .intro {
+  grid-column: 1;
+}
+main .colorized-buttons .colour-classes {
+  gap: 1%;
+}
+main .colorized-buttons .colour-classes .fonts .font-colour-classes p {
+  width: 75%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+main .colorized-buttons .colour-classes .back-01 .back-colour-classes-01 p {
+  width: 75%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+main .colorized-buttons .colour-classes .back-02 .back-colour-classes-02 p {
+  width: 75%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+main .rounded-buttons {
+  width: 100%;
+}
+main .rounded-buttons .classes {
+  gap: 1%;
+  padding-bottom: 5%;
+}
+main .rounded-buttons .classes button {
+  width: 50%;
+  margin-top: 1%;
 }
 
 /*# sourceMappingURL=buttons-style.css.map */

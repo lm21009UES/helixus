@@ -185,3 +185,91 @@ main{
         }
     }
 }
+
+@media (max-width: 1200px) {
+    main{
+
+        .introduction, .colorized-buttons{
+            padding: 1%;
+            display: flex;
+            flex-direction: column;
+
+            .button-test{
+                display: flex;
+                flex-direction: row;
+                place-items: center;
+            }
+        }
+
+        .introduction{
+            display: flex;
+            flex-direction: column;
+
+            .button-test{
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+            }
+        }
+
+        .colorized-buttons{
+            display: flex;
+            flex-direction: column;
+            place-items: center;
+            margin-right: 0;
+
+            .colour-classes{
+                @extend .flex-centre;
+
+                .fonts{
+                    @extend .flex-centre;
+
+                    .font-colour-classes{
+                        display: flex;
+                        flex-direction: column;
+                        place-items: center;
+                        width: 500px;
+                    }
+
+                    @extend .view-code-btn;
+                }
+
+                .back-01{
+                    @extend .flex-centre;
+
+                    .back-colour-classes-01{
+                        display: flex;
+                        flex-direction: column;
+                        place-items: center;
+                        width: 500px;
+                    }
+
+                    @extend .view-code-btn;
+
+                }
+
+                .back-02{
+                    @extend .flex-centre;
+
+                    .back-colour-classes-02{
+                        display: flex;
+                        flex-direction: column;
+                        place-items: center;
+                        width: 500px;
+                    }
+                }
+            }
+        }
+
+        .rounded-buttons{
+            @extend .flex-centre;
+            width: 100%;
+
+            .classes{
+                display: flex;
+                flex-direction: column;
+                place-items: center;
+            }
+        }
+    }
+}
