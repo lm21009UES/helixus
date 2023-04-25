@@ -10,13 +10,15 @@
         <section>
             <article class="title">
                 <h1 class="text-size-1 text-principal text-center">Formularios</h1>
-                <p>Entre diferentes formatos de formularios disponibles, tenemos: </p>
+                <p class="text-size-2">Entre diferentes formatos de formularios disponibles, tenemos: </p>
+            </article>
+            <article class="article-header">
+                <h2 class="text-size-3 set-font-2" style="margin-left: 5%">
+                    Input por defecto: <span class="underline-text-format">default-form</span>
+                </h2>
             </article>
             <article class="default-form ">
                 <article class="example">
-                    <h2 class="text-size-3">
-                        Input por defecto: <span class="underline-text-format">default-form</span>
-                    </h2>
                     <form method="get" class="default-input-form">
                         <article class="top-input">
                             <label for="top-example-input">Nombre: </label>
@@ -33,63 +35,18 @@
                         </article>
                     </form>
                 </article>
-                <article class="code" >
-                    <p class="set-green-font-colour">.default-form{</p>
-                    <p class="middle set-lightblue-font-colour">display: grid;</p>
-                    <p class="internal set-lightblue-font-colour">grid-template-columns: repeat(2, 1fr);</p>
-                    <p class="internal set-lightblue-font-colour">align-items: center;</p>
-                    <p class="internal set-lightblue-font-colour">margin: 3%;</p>
-                    <p class="internal set-lightblue-font-colour">font-weight: $bold-format;</p>
-                    <br>
-                    <p class="internal set-lightblue-font-colour">h2{</p>
-                    <p class="more-internal set-yellow-font-colour">padding-bottom: 1%;</p>
-                    <p class="internal set-lightblue-font-colour">}</p>
-                    <br>
-                    <p class="internal set-lightblue-font-colour">form{</p>
-                    <p class="more-internal set-yellow-font-colour">margin-left: 1%;</p>
-                    <p class="more-internal set-yellow-font-colour">display: flex;</p>
-                    <p class="more-internal set-yellow-font-colour">flex-direction: column;</p>
-                    <p class="more-internal set-yellow-font-colour">place-items: center;</p>
-                    <p class="more-internal set-yellow-font-colour">background-color: $light-blue-colour;</p>
-                    <p class="more-internal set-yellow-font-colour">height: 350px;</p>
-                    <p class="more-internal set-yellow-font-colour">width: 50%;</p>
-                    <br>
-                    <p class="more-internal set-yellow-font-colour">label{</p>
-                    <p class="latest set-yellow-font-colour">margin-top: 5%;</p>
-                    <p class="internal set-lightblue-font-colour">}</p>
-                    <br>
-                    <p class="internal set-lightblue-font-colour">article{</p>
-                    <p class="more-internal set-yellow-font-colour">display: grid;</p>
-                    <p class="more-internal set-yellow-font-colour">gap: 5%;</p>
-                    <p class="more-internal set-yellow-font-colour">height: 100px;</p>
-                    <p class="internal set-lightblue-font-colour">}</p>
-                    <br>
-                    <p class="internal set-lightblue-font-colour">article .top-input{</p>
-                    <p class="more-internal set-yellow-font-colour">background-color: $light-blue-colour;</p>
-                    <p class="internal set-lightblue-font-colour">}</p>
-                    <br>
-                    <p class="internal set-lightblue-font-colour">article .bottom-input{</p>
-                    <p class="more-internal set-yellow-font-colour">background-color: $light-blue-colour;</p>
-                    <p class="internal set-lightblue-font-colour">}</p>
-                    <br>
-                    <p class="internal set-lightblue-font-colour">.send-button{</p>
-                    <p class="more-internal set-yellow-font-colour">@extend .send-button;</p>
-                    <p class="more-internal set-yellow-font-colour">height: 5%;</p>
-                    <p class="more-internal set-yellow-font-colour">margin-top: 5%;</p>
-                    <br>
-                    <p class="latest set-yellow-font-colour">button{</p>
-                    <p class="xd set-red-font-colour">background-color: #F5BDC8;</p>
-                    <p class="xd set-red-font-colour">border-radius: 25px;</p>
-                    <p class="latest set-yellow-font-colour">}</p>
-                    <p class="internal set-lightblue-font-colour">}</p>
-                    <p class="set-green-font-colour">}</p>
+                <article class="code-capture">
+                    <img src="./../images/forms/default-form/01.png" alt="">
+                    <img src="./../images/forms/default-form/02.png" alt="">
                 </article>
+            </article>
+            <article class="article-header">
+                <h2 class="text-size-3 set-font-2" style="margin-left: 5%">
+                    Una caja al lado de otra: <span class="underline-text-format">side-to-side-form</span>
+                </h2>
             </article>
             <article class="side-to-side-form">
                 <article class="example">
-                    <h2>
-                        Una caja al lado de otra: <span class="underline-text-format">side-to-side-form</span>
-                    </h2>
                     <form method="get" class="side-to-side-form">
                         <article class="get-data">
                             <article class="left-input">
@@ -107,57 +64,21 @@
                         </article>
                     </form>
                 </article>
-                <article class="code">
-                    <p class="set-green-font-colour">.side-to-side-form{</p>
-                    <p class="middle set-lightblue-font-colour">display: flex;</p>
-                    <p class="middle set-lightblue-font-colour">flex-direction: column;</p>
-                    <p class="middle set-lightblue-font-colour">align-items: center;</p>
-                    <br>
-                    <p class="middle set-lightblue-font-colour">h2{</p>
-                    <p class="internal set-lightblue-font-colour">padding-bottom: 1%;</p>
-                    <p class="middle set-lightblue-font-colour">}</p>
-                    <br>
-                    <p class="middle set-lightblue-font-colour">form{</p>
-                    <p class="internal set-lightblue-font-colour">height: 50%;</p>
-                    <p class="internal set-lightblue-font-colour">display: flex;</p>
-                    <p class="internal set-lightblue-font-colour">flex-direction: column;</p>
-                    <p class="internal set-lightblue-font-colour">background-color: #BF616A;</p>
-                    <br>
-                    <p class="internal set-lightblue-font-colour">.get-data{</p>
-                    <p class="more-internal set-yellow-font-colour">display: flex;</p>
-                    <p class="more-internal set-yellow-font-colour">flex-direction: row;</p>
-                    <br>
-                    <p class="more-internal set-yellow-font-colour">label{</p>
-                    <p class="xd set-red-font-colour">padding-top: 1%;</p>
-                    <p class="xd set-red-font-colour">padding-left: 1%;</p>
-                    <p class="internal set-lightblue-font-colour">}</p>
-                    <br>
-                    <p class="internal set-lightblue-font-colour">.left-input, .right-input{</p>
-                    <p class="more-internal set-yellow-font-colour">padding-top: 1%;</p>
-                    <p class="more-internal set-yellow-font-colour">padding-left: 3%;</p>
-                    <p class="internal set-lightblue-font-colour">}</p>
-                    <p class="middle set-lightblue-font-colour">}</p>
-                    <br>
-                    <p class="middle set-lightblue-font-colour">.send-button{</p>
-                    <p class="internal set-lightblue-font-colour">@extend .send-button;</p>
-                    <p class="internal set-lightblue-font-colour">display: grid;</p>
-                    <p class="internal set-lightblue-font-colour">place-items: center;</p>
-                    <p class="internal set-lightblue-font-colour">padding-bottom: 3%;</p>
-                    <br>
-                    <p class="internal set-lightblue-font-colour">button{</p>
-                    <p class="more-internal set-yellow-font-colour">width: 100px;</p>
-                    <p class="more-internal set-yellow-font-colour">background-color: #88C0D0;</p>
-                    <p class="internal set-lightblue-font-colour">}</p>
-                    <p class="middle set-lightblue-font-colour">}</p>
-                    <p class="set-green-font-colour">}</p>
+                <article class="code-capture">
+                    <article class="code-capture">
+                        <img src="./../images/forms/side-to-side/01.png" alt="">
+                        <img src="./../images/forms/side-to-side/02.png" alt="">
+                    </article>
                 </article>
+            </article>
+            <article class="article-header">
+                <h2 class="text-size-3 set-font-2" style="margin-left: 5%">
+                    Un ejemplo de ingreso de datos para un correo:
+                    <span class="underline-text-format">email-input-format</span>
+                </h2>
             </article>
             <article class="email-input-format">
                 <article class="example">
-                    <h2>
-                        Un ejemplo de ingreso de datos para un correo:
-                        <span class="underline-text-format">email-input-format</span>
-                    </h2>
                     <form method="get" class="gmail-input-form">
                         <article class="get-sender-data">
                             <article class="left-input">
@@ -183,71 +104,18 @@
                         </article>
                     </form>
                 </article>
-                <article class="code">
-                    <p class="set-green-font-colour">.email-input-format{</p>
-                    <p class="middle set-lightblue-font-colour">display: flex;</p>
-                    <p class="middle set-lightblue-font-colour">flex-direction: column;</p>
-                    <p class="middle set-lightblue-font-colour">align-items: center;</p>
-                    <p class="middle set-lightblue-font-colour">margin: 3%;</p>
-                    <br>
-                    <p class="middle set-lightblue-font-colour">.example{</p>
-                    <p class="internal set-lightblue-font-colour">h2{</p>
-                    <p class="more-internal set-yellow-font-colour">padding-bottom: 1%;</p>
-                    <p class="more-internal set-yellow-font-colour">width: 45%;</p>
-                    <p class="internal set-lightblue-font-colour">}</p>
-                    <br>
-                    <p class="internal set-lightblue-font-colour">form{</p>
-                    <p class="more-internal set-yellow-font-colour">background-color: $yellow-colour;</p>
-                    <p class="more-internal set-yellow-font-colour">padding: 5%;</p>
-                    <p class="more-internal set-yellow-font-colour">width: 35%;</p>
-                    <p class="more-internal set-yellow-font-colour"> display: flex;</p>
-                    <p class="more-internal set-yellow-font-colour">flex-direction: column;</p>
-                    <p class="more-internal set-yellow-font-colour">grid-template-columns: repeat(2, 40%);</p>
-                    <br>
-                    <p class="more-internal set-yellow-font-colour">input{</p>
-                    <p class="xd set-red-font-colour">width: 100%;</p>
-                    <p class="xd set-red-font-colour">height: 35px;</p>
-                    <p class="more-internal set-yellow-font-colour">}</p>
-                    <br>
-                    <p class="more-internal set-yellow-font-colour">.get-sender-data{</p>
-                    <p class="xd set-red-font-colour">display: grid;</p>
-                    <p class="xd set-red-font-colour">gap: 10%;</p>
-                    <p class="more-internal set-yellow-font-colour">}</p>
-                    <br>
-                    <p class="more-internal set-yellow-font-colour">.message-subject{</p>
-                    <p class="xd set-red-font-colour">padding-top: 1%;</p>
-                    <p class="xd set-red-font-colour">display: grid;</p>
-                    <p class="xd set-red-font-colour">gap: 10%;</p>
-                    <br>
-                    <p class="xd set-red-font-colour">label{</p>
-                    <p class="xd-2 set-black-font-colour">padding-top: 10%;</p>
-                    <p class="xd-2 set-black-font-colour">padding-left: 1%;</p>
-                    <p class="xd set-red-font-colour">}</p>
-                    <br>
-                    <p class="xd set-red-font-colour">textarea{</p>
-                    <p class="xd-2 set-black-font-colour">width: 100%;</p>
-                    <p class="xd-2 set-black-font-colour">height: 100px;</p>
-                    <p class="xd set-red-font-colour">}</p>
-                    <p class="more-internal set-yellow-font-colour">}</p>
-                    <br>
-                    <p class="more-internal set-yellow-font-colour">.send-button{</p>
-                    <p class="xd set-red-font-colour">@extend .send-button;</p>
-                    <p class="xd set-red-font-colour">button{</p>
-                    <p class="xd-2 set-black-font-colour">width: 100%;</p>
-                    <p class="xd-2 set-black-font-colour">background-color: #98bb46;</p>
-                    <p class="xd-2 set-black-font-colour">border-radius: 25px;</p>
-                    <p class="xd set-red-font-colour">}</p>
-                    <p class="more-internal set-yellow-font-colour">}</p>
-                    <p class="internal set-lightblue-font-colour">}</p>
-                    <p class="middle set-lightblue-font-colour">}</p>
-                    <p class="set-green-font-colour">}
+                <article class="code-capture">
+                    <img src="./../images/forms/email-input/01.png" alt="">
+                    <img src="./../images/forms/email-input/02.png" alt="">
                 </article>
+            </article>
+            <article class="article-header">
+                <h2 class="text-size-3 set-font-2" style="margin-left: 5%">
+                    Un formulario de registro: <span class="underline-text-format">register-input</span>
+                </h2>
             </article>
             <article class="register-input">
                 <article class="example">
-                    <h2>
-                        Un formulario de registro: <span class="underline-text-format">register-input</span>
-                    </h2>
                     <form class="register-form">
                         <article class="text">
                         <span class="bold-text-format text-size-3">
@@ -279,88 +147,18 @@
                         </article>
                     </form>
                 </article>
-                <article class="code">
-                    <p class="set-green-font-colour">.register-input {</p>
-                    <p class="middle set-lightblue-font-colour">display: flex;</p>
-                    <p class="middle set-lightblue-font-colour">flex-direction: column;</p>
-                    <p class="middle set-lightblue-font-colour">align-items: center;</p>
-                    <p class="middle set-lightblue-font-colour">margin: 3%;</p>
-                        <br>
-                    <p class="middle set-lightblue-font-colour">h2 {
-                    <p class="internal set-lightblue-font-colour">padding-bottom: 1%;</p>
-                    <p class="internal set-lightblue-font-colour">width: 45%;</p>
-                    <p class="middle set-lightblue-font-colour">}</p>
-                        <br>
-                    <p class="middle set-lightblue-font-colour">form {</p>
-                    <p class="internal set-lightblue-font-colour">background: linear-gradient(90deg, #77ff80, rgba(46, 206, 183, 0.95));</p>
-                    <p class="internal set-lightblue-font-colour">padding: 5%;</p>
-                    <p class="internal set-lightblue-font-colour">width: 35%;</p>
-                    <p class="internal set-lightblue-font-colour">display: flex;</p>
-                    <p class="internal set-lightblue-font-colour">flex-direction: column;</p>
-                    <p class="internal set-lightblue-font-colour">grid-template-columns: repeat(2, 40%);</p>
-                            <br>
-                    <p class="internal set-lightblue-font-colour">input {</p>
-                    <p class="more-internal set-yellow-font-colour">width: 100%;</p>
-                    <p class="more-internal set-yellow-font-colour">height: 35px;</p>
-                    <p class="more-internal set-yellow-font-colour">margin-top: 5%;</p>
-                    <p class="more-internal set-yellow-font-colour">display: flex;</p>
-                    <p class="more-internal set-yellow-font-colour">align-items: center;</p>
-                    <p class="internal set-lightblue-font-colour">}</p>
-                            <br>
-                    <p class="internal set-lightblue-font-colour">.get-sender-data {</p>
-                    <p class="more-internal set-yellow-font-colour">display: grid;</p>
-                    <p class="more-internal set-yellow-font-colour">gap: 10%;</p>
-                    <p class="internal set-lightblue-font-colour">}</p>
-                            <br>
-                    <p class="internal set-lightblue-font-colour">.get-sex {</p>
-                    <p class="more-internal set-yellow-font-colour">display: flex;</p>
-                    <p class="more-internal set-yellow-font-colour">flex-direction: row;</p>
-                                <br>
-                    <p class="more-internal set-yellow-font-colour">label {</p>
-                    <p class="xd set-black-font-colour">padding-top: 10%;</p>
-                    <p class="xd set-black-font-colour">padding-left: 1%;</p>
-                    <p class="more-internal set-yellow-font-colour">}</p>
-                                <br>
-                    <p class="more-internal set-yellow-font-colour">.male, .female{</p>
-                    <p class="xd set-red-font-colour">display: flex;</p>
-                    <p class="xd set-red-font-colour">flex-direction: row;</p>
-                    <p class="xd set-red-font-colour">justify-content: center;</p>
-                    <p class="xd set-red-font-colour">align-items: center;</p>
-                    <p class="xd set-red-font-colour">padding-right: 15%;</p>
-                    <p class="xd set-red-font-colour">padding-top: 5%;</p>
-                                    <br>
-                    <p class="xd set-red-font-colour">input[type="radio"]{</p>
-                    <p class="xd-2 set-black-font-colour">transform: scale(1.25);</p>
-                    <p class="xd set-red-font-colour">}</p>
-                                    <br>
-                    <p class="xd set-red-font-colour">span{</p>
-                    <p class="xd-2 set-black-font-colour">padding-left: 5%;</p>
-                    <p class="xd set-red-font-colour">}</p>
-                    <p class="more-internal set-yellow-font-colour">}</p>
-                    <p class="middle set-lightblue-font-colour">}</p>
-                            <br>
-                    <p class="middle set-lightblue-font-colour">.finish{</p>
-                    <p class="internal set-lightblue-font-colour">display: grid;</p>
-                    <p class="internal set-lightblue-font-colour">grid-template-columns: repeat(2, 1fr);</p>
-                    <p class="internal set-lightblue-font-colour">gap: 5%;</p>
-                                <br>
-                    <p class="internal set-lightblue-font-colour">.submit, .cancel{</p>
-                    <p class="internal set-lightblue-font-colour">height: 35px;</p>
-                    <p class="internal set-lightblue-font-colour">border: 1px solid black;</p>
-                    <p class="internal set-lightblue-font-colour">border-radius: 25px;</p>
-                    <p class="middle set-lightblue-font-colour">}</p>
-                    <p class="middle set-lightblue-font-colour">}</p>
-                    <p class="middle set-lightblue-font-colour">}</p>
-                    <p class="set-green-font-colour">}</p>
+                <article class="code-capture">
+                    <img src="./../images/forms/register-input/01.png" alt="">
+                    <img src="./../images/forms/register-input/02.png" alt="">
                 </article>
+            </article>
+            <article class="article-header">
+                <h2 class="text-size-3 set-font-2" style="margin-left: 5%">
+                    Envío de documentos: <span class="underline-text-format">send-files-form</span>
+                </h2>
             </article>
             <article class="send-files">
                 <article class="example">
-                    <h2>
-                        Envío de documentos: <span class="underline-text-format">
-                    send-files-form
-                </span>
-                    </h2>
                     <form class="send-files-form">
                         <label for="sender-name">Nombre completo del emisor: </label>
                         <input type="text" id="sender-name" required>
@@ -377,49 +175,10 @@
                         <button type="submit">Enviar</button>
                     </form>
                 </article>
-                <article class="code">
-                    <p class="set-green-font-colour">.send-files{</p>
-                    <p class="middle set-lightblue-font-colour">display: flex;</p>
-                    <p class="middle set-lightblue-font-colour">flex-direction: column;</p>
-                    <p class="middle set-lightblue-font-colour">align-items: center;</p>
-                    <p class="middle set-lightblue-font-colour">margin: 3%;</p>
-                        <br>
-                    <p class="middle set-lightblue-font-colour">h2 {</p>
-                    <p class="more-internal set-yellow-font-colour">padding-bottom: 1%;</p>
-                    <p class="more-internal set-yellow-font-colour">width: 45%;</p>
-                    <p class="middle set-lightblue-font-colour">}</p>
-                        <br>
-                    <p class="middle set-lightblue-font-colour">form {</p>
-                    <p class="more-internal set-yellow-font-colour">background: #A75D5D;</p>
-                    <p class="more-internal set-yellow-font-colour">padding: 5%;</p>
-                    <p class="more-internal set-yellow-font-colour">width: 35%;</p>
-                    <p class="more-internal set-yellow-font-colour">display: flex;</p>
-                    <p class="more-internal set-yellow-font-colour">justify-content: center;</p>
-                    <p class="more-internal set-yellow-font-colour">flex-direction: column;</p>
-                    <p class="more-internal set-yellow-font-colour">grid-template-columns: repeat(2, 40%);</p>
-                            <br>
-                    <p class="more-internal set-yellow-font-colour">input {</p>
-                    <p class="xd set-red-font-colour">width: 100%;</p>
-                    <p class="xd set-red-font-colour">height: 35px;</p>
-                    <p class="xd set-red-font-colour">padding-top: 5%;</p>
-                    <p class="xd set-red-font-colour">display: flex;</p>
-                    <p class="xd set-red-font-colour">align-items: center;</p>
-                    <p class="more-internal set-yellow-font-colour">}</p>
-                        <br>
-                    <p class="more-internal set-yellow-font-colour">input[type="file"] {</p>
-                    <p class="xd set-red-font-colour">border-radius: 25px;</p>
-                    <p class="xd set-red-font-colour">padding: 0;</p>
-                    <p class="more-internal set-yellow-font-colour">}</p>
-                        <br>
-                    <p class="more-internal set-yellow-font-colour">button{</p>
-                    <p class="xd set-red-font-colour">margin-top: 5%;</p>
-                    <p class="xd set-red-font-colour">width: 25%;</p>
-                    <p class="xd set-red-font-colour">border: 1px black solid;</p>
-                    <p class="xd set-red-font-colour">border-radius: 25px;</p>
-                    <p class="more-internal set-yellow-font-colour">}</p>
-                    <p class="middle set-lightblue-font-colour">}</p>
-                    <p class="set-green-font-colour">}</p>
-
+                <article class="code-capture">
+                    <article class="code-capture">
+                        <img src="./../images/forms/send-files/01.png" alt="">
+                    </article>
                 </article>
             </article>
         </section>
