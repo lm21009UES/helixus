@@ -1785,38 +1785,68 @@ main .introduction .button-test .code {
   padding: 5%;
 }
 main .colorized-buttons {
-  display: grid;
+  display: flex;
+  flex-direction: column;
 }
 main .colorized-buttons h2 {
-  padding: 0;
+  padding-top: 5%;
 }
 main .colorized-buttons .intro {
   grid-column: 1;
 }
-main .colorized-buttons .font-colour-classes, main .colorized-buttons .back-colour-classes {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+main .colorized-buttons .colour-classes {
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+  gap: 1%;
 }
-main .colorized-buttons .font-colour-classes .classes, main .colorized-buttons .back-colour-classes .classes {
-  grid-column: 1;
+main .colorized-buttons .colour-classes .fonts {
+  display: flex;
+  flex-direction: column;
+  place-items: center;
 }
-main .colorized-buttons .font-colour-classes .classes p, main .colorized-buttons .back-colour-classes .classes p {
-  padding-bottom: 5%;
-}
-main .colorized-buttons .font-colour-classes .code, main .colorized-buttons .back-colour-classes .code {
-  background-color: transparent;
-  grid-column: 2;
-  grid-template-rows: repeat(7, 1fr);
-}
-main .colorized-buttons .font-colour-classes .code img, main .colorized-buttons .back-colour-classes .code img {
+main .colorized-buttons .colour-classes .fonts .font-colour-classes {
+  display: flex;
+  flex-direction: row;
   width: 100%;
-  height: 100%;
 }
-main .colorized-buttons .font-colour-classes .blue, main .colorized-buttons .font-colour-classes .yellow, main .colorized-buttons .font-colour-classes .green, main .colorized-buttons .font-colour-classes .lightblue, main .colorized-buttons .font-colour-classes .black, main .colorized-buttons .font-colour-classes .red, main .colorized-buttons .font-colour-classes .white, main .colorized-buttons .back-colour-classes .blue, main .colorized-buttons .back-colour-classes .yellow, main .colorized-buttons .back-colour-classes .green, main .colorized-buttons .back-colour-classes .lightblue, main .colorized-buttons .back-colour-classes .black, main .colorized-buttons .back-colour-classes .red, main .colorized-buttons .back-colour-classes .white {
-  border: 0.5px lightgrey solid;
+main .colorized-buttons .colour-classes .fonts .font-colour-classes p {
+  width: 75%;
+  margin-top: 5%;
+  margin-bottom: 5%;
 }
-main .colorized-buttons .font-colour-classes .colours, main .colorized-buttons .back-colour-classes .colours {
-  height: 100%;
+main .colorized-buttons .colour-classes .fonts .img-font-colours {
+  height: 150%;
+}
+main .colorized-buttons .colour-classes .back-01 {
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+}
+main .colorized-buttons .colour-classes .back-01 .back-colour-classes-01 {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+main .colorized-buttons .colour-classes .back-01 .back-colour-classes-01 p {
+  width: 75%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+main .colorized-buttons .colour-classes .back-02 {
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+}
+main .colorized-buttons .colour-classes .back-02 .back-colour-classes-02 {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+main .colorized-buttons .colour-classes .back-02 .back-colour-classes-02 p {
+  width: 75%;
+  margin-top: 5%;
+  margin-bottom: 5%;
 }
 main .rounded-buttons {
   display: grid;
