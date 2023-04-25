@@ -326,3 +326,24 @@ input, textarea{
         }
     }
 }
+
+@media (max-width: 1200px) {
+    .default-form, .side-to-side-form, .email-input-format, .register-input, .send-files{
+        margin: 0;
+        padding: 0;
+    }
+}
+
+@media (max-width: 1000px) {
+    .default-form, .side-to-side-form, .email-input-format, .register-input, .send-files{
+        display: flex;
+        flex-direction: column;
+
+        .example{
+            form{
+                margin-top: 15%;
+                margin-bottom: 15%;
+            }
+        }
+    }
+}

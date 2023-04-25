@@ -1641,6 +1641,22 @@ input, textarea {
   border-radius: 25px;
 }
 
+@media (max-width: 1200px) {
+  .default-form, .side-to-side-form, .email-input-format, .register-input, .send-files {
+    margin: 0;
+    padding: 0;
+  }
+}
+@media (max-width: 1000px) {
+  .default-form, .side-to-side-form, .email-input-format, .register-input, .send-files {
+    display: flex;
+    flex-direction: column;
+  }
+  .default-form .example form, .side-to-side-form .example form, .email-input-format .example form, .register-input .example form, .send-files .example form {
+    margin-top: 15%;
+    margin-bottom: 15%;
+  }
+}
 .container, .container-fluid, .container-sm, .container-md, .container-lg, .container-xl, .container-xxl {
   width: 100%;
   padding-right: 15px;
