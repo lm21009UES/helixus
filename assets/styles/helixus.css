@@ -674,7 +674,7 @@
 }
 
 .set-font-2 {
-  font-family: sans-serif;
+  font-family: "Arial Narrow Bold";
 }
 
 .set-font-3 {
@@ -784,7 +784,7 @@
 }
 
 .set-font-2 {
-  font-family: sans-serif;
+  font-family: "Arial Narrow Bold";
 }
 
 .set-font-3 {
@@ -1724,6 +1724,22 @@ input, textarea {
   color: white;
 }
 
+.flex-centre, main .rounded-buttons, main .colorized-buttons .colour-classes .back-02, main .colorized-buttons .colour-classes .back-01, main .colorized-buttons .colour-classes .fonts, main .colorized-buttons .colour-classes {
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+}
+
+.flex-centre-row, main .rounded-buttons .classes, main .colorized-buttons .colour-classes .back-02 .back-colour-classes-02, main .colorized-buttons .colour-classes .back-01 .back-colour-classes-01, main .colorized-buttons .colour-classes .fonts .font-colour-classes {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.view-code-btn button, main .rounded-buttons .classes button, main .colorized-buttons .colour-classes .back-02 button, main .colorized-buttons .colour-classes .back-01 button, main .colorized-buttons .colour-classes .fonts button {
+  width: 150px;
+}
+
 main {
   display: flex;
   flex-direction: column;
@@ -1795,53 +1811,17 @@ main .colorized-buttons .intro {
   grid-column: 1;
 }
 main .colorized-buttons .colour-classes {
-  display: flex;
-  flex-direction: column;
-  place-items: center;
   gap: 1%;
-}
-main .colorized-buttons .colour-classes .fonts {
-  display: flex;
-  flex-direction: column;
-  place-items: center;
-}
-main .colorized-buttons .colour-classes .fonts .font-colour-classes {
-  display: flex;
-  flex-direction: row;
-  width: 100%;
 }
 main .colorized-buttons .colour-classes .fonts .font-colour-classes p {
   width: 75%;
   margin-top: 5%;
   margin-bottom: 5%;
 }
-main .colorized-buttons .colour-classes .fonts .img-font-colours {
-  height: 150%;
-}
-main .colorized-buttons .colour-classes .back-01 {
-  display: flex;
-  flex-direction: column;
-  place-items: center;
-}
-main .colorized-buttons .colour-classes .back-01 .back-colour-classes-01 {
-  display: flex;
-  flex-direction: row;
-  width: 100%;
-}
 main .colorized-buttons .colour-classes .back-01 .back-colour-classes-01 p {
   width: 75%;
   margin-top: 5%;
   margin-bottom: 5%;
-}
-main .colorized-buttons .colour-classes .back-02 {
-  display: flex;
-  flex-direction: column;
-  place-items: center;
-}
-main .colorized-buttons .colour-classes .back-02 .back-colour-classes-02 {
-  display: flex;
-  flex-direction: row;
-  width: 100%;
 }
 main .colorized-buttons .colour-classes .back-02 .back-colour-classes-02 p {
   width: 75%;
@@ -1849,28 +1829,15 @@ main .colorized-buttons .colour-classes .back-02 .back-colour-classes-02 p {
   margin-bottom: 5%;
 }
 main .rounded-buttons {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  width: 100%;
 }
 main .rounded-buttons .classes {
-  display: flex;
-  flex-direction: column;
-  grid-column: 1;
-  place-items: center;
-  height: 100%;
+  gap: 1%;
+  padding-bottom: 5%;
 }
 main .rounded-buttons .classes button {
   width: 50%;
-  margin-top: 20%;
-}
-main .rounded-buttons .blue, main .rounded-buttons .green, main .rounded-buttons .orange {
-  border: 1px black solid;
-}
-main .rounded-buttons .orange {
-  margin-bottom: 5%;
-}
-main .rounded-buttons .code {
-  background-color: transparent;
+  margin-top: 1%;
 }
 
 .main {
